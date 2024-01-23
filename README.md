@@ -3,7 +3,7 @@
 
 ## Module 1.0 : Introduction à Docker
 ### 1.1. Qu'est-ce que Docker ?
-### 1.2. Pourquoi utiliser Docker ? Quels sont ses avantages ?
+### 1.2. Pourquoi utiliser Docker ? Quels problèmes résout-il et quels sont ses avantages ?
 
 ## Module 2.0 : Installation de Docker
 ### 2.1. Comment installer Docker sur Windows ?
