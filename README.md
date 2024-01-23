@@ -1,48 +1,63 @@
+
 # Formation Docker
 
-## Module 1.0: Introduction à Docker
-- **1.1. Qu'est-ce que Docker?**
-- **1.2. Pourquoi Utiliser Docker? Quels sont ses Avantages?**
+## Module 1.0 : Introduction à Docker
+### 1.1. Qu'est-ce que Docker ?
+### 1.2. Pourquoi utiliser Docker ? Quels sont ses avantages ?
 
-## Module 2.0: Installation de Docker
-- **2.1. Comment Installer Docker sur Windows?**
-- **2.2. Comment Installer Docker sur MacOS?**
-- **2.3. Comment Installer Docker sur Linux?**
+## Module 2.0 : Installation de Docker
+### 2.1. Comment installer Docker sur Windows ?
+### 2.2. Comment installer Docker sur MacOS ?
+### 2.3. Comment installer Docker sur Linux ?
 
-## Module 3.0: Fondamentaux des Conteneurs et des Images
-- **3.1. Quelle est la Différence entre un Conteneur Docker et une Image Docker?**
-- **3.2. Comment Gérer les Images Docker?**
-  - `docker images`
-  - `docker pull [IMAGE]`
-  - `docker rmi [IMAGE]`
-- **3.3. Comment Créer et Exécuter des Conteneurs Docker?**
-  - `docker run [IMAGE]`
-  - `docker ps`
-- **3.4. Comment Interagir avec les Conteneurs Docker?**
-  - `docker exec -it [CONTENEUR] bash`
-- **3.5. Comment Surveiller et Dépanner un Conteneur Docker?**
-  - `docker logs [CONTENEUR]`
-  - `docker inspect [CONTENEUR]`
+## Module 3.0 : Fondamentaux des Conteneurs et des Images
+### 3.1. Quelle est la différence entre un conteneur Docker et une image Docker ?
+### 3.2. Comment gérer les images Docker ?
+#### 3.2.1. Comment lister les images Docker ?
+- `docker images`
+#### 3.2.2. Comment récupérer une image Docker ?
+- `docker pull [IMAGE]`
+#### 3.2.3. Comment supprimer une image Docker ?
+- `docker rmi [IMAGE]`
+### 3.3. Comment créer et exécuter des conteneurs Docker ?
+#### 3.3.1. Comment démarrer un conteneur Docker ?
+- `docker run [IMAGE]`
+#### 3.3.2. Comment lister les conteneurs actifs ?
+- `docker ps`
+### 3.4. Comment exécuter des commandes à l'intérieur d'un conteneur Docker ?
+#### 3.4.1. Comment accéder au shell d'un conteneur Docker ?
+- `docker exec -it [CONTENEUR] bash`
+### 3.5. Comment surveiller et dépanner un conteneur Docker ?
+#### 3.5.1. Comment consulter les logs d'un conteneur Docker ?
+- `docker logs [CONTENEUR]`
+#### 3.5.2. Comment inspecter les détails d'un conteneur Docker ?
+- `docker inspect [CONTENEUR]`
 
-## Module 4.0: Gestion Avancée des Images
-- **4.1. Comment Construire une Image Docker Personnalisée?**
-  - `docker build -t [nom_image] .`
-- **4.2. Comment Optimiser les Images Docker?**
+## Module 4.0 : Gestion Avancée des Images
+### 4.1. Comment construire une image Docker personnalisée ?
+#### 4.1.1. Comment créer une image à partir d'un Dockerfile ?
+- `docker build -t [nom_image] .`
+### 4.2. Comment optimiser les images Docker ?
 
-## Module 5.0: Stockage dans Docker
-- **5.1. Comment Utiliser les Volumes Docker?**
-  - `docker volume create [nom_volume]`
-  - `docker run -v [nom_volume]:[chemin_dans_conteneur]`
+## Module 5.0 : Stockage dans Docker
+### 5.1. Comment utiliser les volumes Docker ?
+#### 5.1.1. Comment créer et gérer un volume Docker ?
+- `docker volume create [nom_volume]`
+#### 5.1.2. Comment monter un volume dans un conteneur Docker ?
+- `docker run -v [nom_volume]:[chemin_dans_conteneur]`
 
-## Module 6.0: Réseautage dans Docker
-- **6.1. Quels sont les Concepts de Base du Réseau dans Docker?**
-  - `docker network ls`
-  - `docker network create [nom_reseau]`
-- **6.2. Comment Connecter des Conteneurs à des Réseaux Docker?**
-  - `docker run --network=[nom_reseau] [IMAGE]`
+## Module 6.0 : Réseautage dans Docker
+### 6.1. Quels sont les concepts de base du réseau dans Docker ?
+#### 6.1.1. Comment afficher les réseaux Docker disponibles ?
+- `docker network ls`
+#### 6.1.2. Comment créer un réseau Docker ?
+- `docker network create [nom_reseau]`
+### 6.2. Comment connecter des conteneurs à des réseaux Docker ?
+#### 6.2.1. Comment connecter un conteneur à un réseau spécifique ?
+- `docker run --network=[nom_reseau] [IMAGE]`
 
-## Module 7.0: Docker Compose et Orchestration
-- **7.1. Qu'est-ce que Docker Compose et Comment l'Utiliser?**
-  - `docker-compose up`
-  - `docker-compose down`
-
+## Module 7.0 : Docker Compose et Orchestration
+### 7.1. Qu'est-ce que Docker Compose et comment l'utiliser ?
+#### 7.1.1. Comment démarrer et arrêter des services avec Docker Compose ?
+- `docker-compose up`
+- `docker-compose down`
