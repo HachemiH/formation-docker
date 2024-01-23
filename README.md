@@ -1,4 +1,3 @@
-
 # Formation Docker
 
 ## Module 1.0 : Introduction à Docker
