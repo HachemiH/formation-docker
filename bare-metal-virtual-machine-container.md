@@ -8,7 +8,9 @@ Un système **Bare Metal** fait référence à un ordinateur ou un serveur physi
 Une **machine virtuelle (VM)** est comme un ordinateur dans votre ordinateur. Utilisant un logiciel appelé hyperviseur, elle crée un environnement virtuel qui imite un ordinateur physique. Chaque VM a son propre système d'exploitation et est séparée des autres VM sur le même hôte. Par exemple, si vous utilisez un Mac mais devez exécuter des applications Windows, vous pouvez installer Windows dans une VM. C'est comme avoir plusieurs ordinateurs distincts opérant sur une seule machine physique.
 
 ## Container
-Un **conteneur** est une forme de virtualisation plus légère. Au lieu de virtualiser tout un ordinateur, il virtualise seulement l'environnement d'exécution d'une application. Les conteneurs partagent le système d'exploitation de l'hôte, mais s'exécutent dans des processus isolés. Imaginez que vous avez plusieurs projets de développement sur votre ordinateur, chacun nécessitant différentes versions d'un logiciel. Les conteneurs permettent d'exécuter ces projets séparément dans leurs propres environnements sans interférer les uns avec les autres.
+Les **conteneurs** sont comme des appartements dans un grand immeuble résidentiel. Chaque appartement (conteneur) dispose de son propre aménagement intérieur, de meubles et de décoration (ses propres dépendances et configurations logicielles), tout en partageant des services communs comme la plomberie, l'électricité et le chauffage central (le système d'exploitation de l'hôte). Cela signifie que, bien que chaque appartement soit indépendant et personnalisé, ils dépendent tous de l'infrastructure commune pour les services de base. 
+
+Dans le contexte du développement web, cela se traduit par la capacité d'exécuter plusieurs applications ou services web sur un même serveur physique. Chaque conteneur est isolé des autres, ce qui signifie qu'il peut fonctionner avec ses propres bibliothèques et paramètres sans interférer avec les autres conteneurs, tout comme les résidents d'un immeuble utilisent leur propre espace sans affecter leurs voisins, malgré le partage de l'infrastructure de base de l'immeuble.
 
 ### Comparaison
 - **Performance :** 
@@ -27,3 +29,5 @@ Un **conteneur** est une forme de virtualisation plus légère. Au lieu de virtu
   - **Bare Metal :** Utilise pleinement les ressources matérielles.
   - **VM :** Moins efficace en termes d'utilisation des ressources.
   - **Container :** Très efficace, utilise les ressources de manière optimale.
+  
+
