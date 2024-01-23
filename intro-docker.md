@@ -13,7 +13,6 @@ Docker a fait son apparition en 2013, introduit par la société parisienne dotC
 2. **Portabilité :** Les conteneurs Docker peuvent être déployés sur n'importe quel système d'exploitation compatible, rendant le transfert d'une application d'un environnement à un autre incroyablement facile.
 3. **Efficacité :** Par rapport aux machines virtuelles traditionnelles, les conteneurs Docker utilisent moins de ressources, car ils partagent le même système d'exploitation hôte.
 - **Consistance et reproductibilité :** Docker assure que les applications fonctionnent de la même manière, quel que soit l'endroit où elles sont déployées.
-- **Optimisation des ressources :** Les conteneurs Docker utilisent moins de ressources que les machines virtuelles traditionnelles.
 - **Écosystème riche :** Docker Hub propose un large éventail d'images de conteneurs pré-configurées.
 
 ## Utilisations Courantes de Docker
