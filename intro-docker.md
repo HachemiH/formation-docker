@@ -17,14 +17,13 @@ Docker a fait son apparition en 2013, introduit par la société parisienne dotC
 
 ## Utilisations Courantes de Docker
 - **Développement d'applications :** Docker crée des environnements cohérents pour le développement et le test d'applications.
-- **Microservices :** Docker est idéal pour l'architecture de microservices.
+- **Microservices :** Docker est idéal pour l'architecture microservice.
 - **Intégration et déploiement continus (CI/CD) :** Docker facilite la mise en œuvre de pipelines CI/CD.
 - **Déploiement dans le cloud :** Docker s'intègre parfaitement avec les plateformes cloud.
 
 Docker est une technologie clé dans le monde du développement moderne, apportant flexibilité, portabilité et efficacité dans le déploiement d'applications.
 
-
 ### L'Impact de Docker
-Le succès de Docker ne s'est pas limité à la résolution des problèmes de compatibilité. Il a également introduit une nouvelle ère dans le domaine de la microservice architecture, offrant une méthode efficace pour gérer et déployer des applications en petits services indépendants. En outre, Docker a joué un rôle clé dans la popularisation des pratiques de CI/CD (Continuous Integration/Continuous Deployment), en facilitant les mises à jour et les déploiements réguliers d'applications.
+Le succès de Docker ne s'est pas limité à la résolution des problèmes de compatibilité. Il a également introduit une nouvelle ère dans le domaine de l'architecture microservice, offrant une méthode efficace pour gérer et déployer des applications en petits services indépendants. En outre, Docker a joué un rôle clé dans la popularisation des pratiques de CI/CD (Continuous Integration/Continuous Deployment), en facilitant les mises à jour et les déploiements réguliers d'applications.
 
 Docker s'est rapidement établi comme un outil incontournable dans le développement logiciel moderne, avec un écosystème en constante évolution et une communauté active. C'est un exemple parfait de la manière dont une technologie peut transformer un secteur entier, en apportant des solutions innovantes à des problèmes de longue date.
