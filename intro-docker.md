@@ -3,7 +3,7 @@
 Docker est une plateforme de virtualisation au niveau du système d'exploitation, principalement connue pour sa solution de conteneurisation. Elle permet de développer, expédier et exécuter des applications dans des environnements isolés appelés conteneurs. Docker combine des éléments open-source, comme Docker Engine, avec des produits et services sous licence propriétaire.
 
 ## Une Révolution dans la Virtualisation
-Docker est né d'une idée simple mais puissante : faciliter le développement et le déploiement d'applications en les isolant dans des conteneurs. Ces conteneurs, légers et portables, peuvent s'exécuter de manière cohérente sur n'importe quel système d'exploitation supportant Docker.
+Docker est née d'une idée simple mais puissante : faciliter le développement et le déploiement d'applications en les isolant dans des conteneurs. Ces conteneurs, légers et portables, peuvent s'exécuter de manière cohérente sur n'importe quel système d'exploitation supportant Docker.
 
 ### L'Émergence de Docker
 Docker a fait son apparition en 2013, introduit par la société parisienne dotCloud. À l'époque, les développeurs étaient souvent confrontés à des problèmes classiques : une application qui fonctionnait parfaitement sur une machine mais échouait dans un environnement de production différent. Docker a proposé une solution élégante à ce dilemme en encapsulant les applications dans des conteneurs qui pouvaient être exécutés n'importe où, éliminant ainsi les fameux cas de "Ça fonctionne sur ma machine".
