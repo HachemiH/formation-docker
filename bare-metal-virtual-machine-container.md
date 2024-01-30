@@ -1,5 +1,4 @@
-
-# Module 1.1 : Quelle est la différence entre `Bare Metal`, `Virtual Machine` et `Container` ?
+# 1.1 Quelle est la différence entre `Bare Metal`, `Virtual Machine` et `Container` ?
 
 ## Bare Metal
 Un système **Bare Metal** fait référence à un ordinateur ou un serveur physique qui exécute directement des applications sur son système d'exploitation. C'est le matériel pur, sans aucune couche de virtualisation. Imaginez votre ordinateur personnel ou votre téléphone mobile : lorsque vous ouvrez une application ou un jeu, il s'exécute directement sur le système d'exploitation de votre appareil. C'est un exemple de Bare Metal, où le matériel est directement en contact avec le logiciel.

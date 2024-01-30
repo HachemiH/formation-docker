@@ -1,4 +1,4 @@
-# Module 1.2 : Qu'est-ce que Docker ?
+# 1.2 Qu'est-ce que Docker ?
 
 Docker est une plateforme de virtualisation au niveau du système d'exploitation, principalement connue pour sa solution de conteneurisation. Elle permet de développer, expédier et exécuter des applications dans des environnements isolés appelés conteneurs. Docker combine des éléments open-source, comme Docker Engine, avec des produits et services sous licence propriétaire.
 

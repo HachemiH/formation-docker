@@ -1,4 +1,4 @@
-# Les Registres Docker et Docker Hub
+# 3.2 Les Registres Docker et Docker Hub
 
 ## Qu'est-ce qu'un Registre Docker ?
 Un registre Docker est un service de stockage et de distribution d'images Docker. Il est similaire à une bibliothèque où les images Docker sont les livres, disponibles pour être empruntés (téléchargés) et utilisés.

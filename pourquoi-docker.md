@@ -1,4 +1,4 @@
-# Module 1.3 : Pourquoi utiliser Docker ? Quels problèmes résout-il et quels sont ses avantages ?
+# 1.3 Pourquoi utiliser Docker ? Quels problèmes résout-il et quels sont ses avantages ?
 
 
 ## Problèmes Résolus par Docker

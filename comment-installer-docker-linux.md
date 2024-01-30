@@ -1,5 +1,4 @@
-
-# Comment installer Docker sur Linux
+# 2.3 Comment installer Docker sur Linux
 
 ## Étapes d'installation
 

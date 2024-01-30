@@ -1,4 +1,4 @@
-# Commandes de Base pour Gérer les Images Docker
+# 3.3 Commandes de Base pour Gérer les Images Docker
 
 ## Introduction
 Docker permet de créer, gérer et utiliser des images, qui sont des modèles pour les conteneurs Docker. Les commandes de base pour travailler avec ces images sont essentielles pour tout développeur souhaitant utiliser Docker efficacement.
