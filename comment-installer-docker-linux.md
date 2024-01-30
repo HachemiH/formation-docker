@@ -7,7 +7,7 @@
    - Assurez-vous que votre système est compatible avec Docker Desktop.
 
 2. **Téléchargement du paquet d'installation** :
-   - Rendez-vous sur le site officiel de Docker.
+   - Rendez-vous sur le [site officiel de Docker](https://www.docker.com/).
    - Téléchargez le paquet adapté à votre distribution (`.deb` pour Debian/Ubuntu, `.rpm` pour Fedora/Red Hat).
 
 3. **Installation de Docker** :
