@@ -26,10 +26,17 @@ Si vous souhaitez supprimer une image Docker de votre système, utilisez :
 
 Remplacez `[ID_de_l'image]` par l'ID de l'image que vous souhaitez supprimer. Vous pouvez trouver l'ID de l'image en utilisant la commande `docker images`.
 
-### Pousser une Image vers Docker Hub
-Si vous avez créé une image personnalisée que vous souhaitez partager, vous pouvez la pousser vers Docker Hub avec :
 
-- `docker push [nom_de_votre_image]`
+
+#### Comment pousser une image vers un registre Docker ?
+- `docker push [OPTIONS] NAME[:TAG]`
+
+Exemple :
+Supposons que vous avez une image Docker appelée `monapp` avec un tag `v1.0`, et vous souhaitez la pousser vers Docker Hub. La commande serait :
+
+- `docker push monapp:v1.0`
+
+Cette commande va pousser l'image `monapp` avec le tag `v1.0` vers votre registre sur Docker Hub. Assurez-vous que vous êtes connecté à Docker Hub dans votre terminal et que vous avez les droits nécessaires pour pousser l'image dans le registre.
 
 Assurez-vous d'abord de vous connecter à Docker Hub et de taguer votre image avec votre nom d'utilisateur Docker Hub.
 
