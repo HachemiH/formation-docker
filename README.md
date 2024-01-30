@@ -16,8 +16,7 @@
 
 ## Module 3.0 : Fondamentaux des Conteneurs et des Images
 ### [3.1. Quelle est la différence entre un conteneur Docker et une image Docker ?](./conteneur-vs-image-docker.md)
-### 3.2. Registres Docker et Docker Hub
-#### 3.2.1. Qu'est-ce que Docker Hub et comment l'utiliser ?
+### [3.2. Registres Docker et Docker Hub](./docker-hub.md)
 ### 3.3. Comment gérer les images Docker ?
 #### 3.3.1. Comment récupérer une image Docker du Docker Hub ?
 - `docker pull [IMAGE]`
