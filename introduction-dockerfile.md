@@ -1,6 +1,6 @@
 # 4.3. Introduction au Dockerfile
 
-Le Dockerfile est un élément central de l'écosystème Docker, surtout quand il s'agit de créer des images personnalisées. Comme un développeur web débutant qui assemble son premier site, le Dockerfile est le plan qui définit comment assembler une image Docker.
+Le Dockerfile est un élément central de l'écosystème Docker, surtout quand il s'agit de créer des images personnaliséess. Imaginez-le comme le plan d'architecte pour votre image Docker : chaque instruction représente une étape précise dans le processus de construction, assurant que l'image finale soit exactement conforme à vos exigences.
 
 ## 4.3.1 Qu'est-ce qu'un Dockerfile ?
 
