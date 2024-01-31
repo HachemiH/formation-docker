@@ -25,7 +25,8 @@
 ---
 
 ## Module 4.0 : Gestion Avancée des Images
-### [4.1. Pourquoi construire une image Docker personnalisée ?](./pourquoi-construire-une-image-docker-personnalisee.md)
+### [4.1 Prérequis pour la Création d'Images Docker Personnalisées](./prerequis-creation-images-docker.md)
+### [4.2. Pourquoi construire une image Docker personnalisée ?](./pourquoi-construire-une-image-docker-personnalisee.md)
 #### 4.1.1. Comment créer une image à partir d'un Dockerfile ?
 - `docker build -t [nom_image] .`
 ### 4.2. Comment optimiser les images Docker ?

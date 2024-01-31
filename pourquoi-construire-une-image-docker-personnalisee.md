@@ -1,8 +1,8 @@
-# 4.1 Pourquoi les Développeurs Débutants Devraient-ils Créer des Images Docker Personnalisées ?
+# 4.2 Pourquoi les Développeurs Débutants Devraient-ils Créer des Images Docker Personnalisées ?
 
 Pour un développeur débutant, plonger dans le monde de Docker peut sembler intimidant, surtout quand il s'agit de créer des images personnalisées. Mais c'est une compétence inestimable à développer tôt dans votre parcours. Voici pourquoi et comment cela peut être particulièrement bénéfique pour vous.
 
-## L'Importance des Images Personnalisées pour les Débutants
+## 4.2.1 L'Importance des Images Personnalisées pour les Débutants
 
 1. **Apprendre par la Pratique :** En créant vos propres images Docker, vous allez comprendre en profondeur comment les conteneurs fonctionnent. Cela équivaut à apprendre à cuisiner en suivant une recette : vous commencez à comprendre comment différents ingrédients (dans ce cas, les composants logiciels) interagissent pour créer un plat (ou une application) réussi.
 
@@ -12,7 +12,7 @@ Pour un développeur débutant, plonger dans le monde de Docker peut sembler int
 
 4. **Sécurité et Contrôle :** Comprendre et contrôler ce qui se passe dans votre image vous rend plus conscient des aspects de sécurité et de performance, un peu comme apprendre à vérifier les ingrédients d'un produit avant de l'acheter.
 
-## Exemples Concrets pour les Débutants
+## 4.2.2 Exemples Concrets pour les Débutants
 
 - **Application Web Simple :** Imaginons que vous développiez une petite application web en Node.js. Créer une image personnalisée avec Node.js et vos dépendances spécifiques signifie que vous pouvez être sûr que votre application fonctionnera partout où Docker est installé, sans surprises.
 
