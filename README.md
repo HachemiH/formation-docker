@@ -19,7 +19,7 @@
 ### [3.2. Registres Docker et Docker Hub](./docker-hub.md)
 ### [3.3. Comment gérer les images Docker ?](./comment-gerer-les-images-docker.md)
 ### [3.4. Comment gérer les conteneurs Docker ?](./comment-gerer-les-conteneurs-docker.md)
-### 3.5. Comment exécuter des commandes à l'intérieur d'un conteneur Docker ?
+### [3.5. Comment exécuter des commandes à l'intérieur d'un conteneur Docker ?](./executer-commandes-dans-conteneur-docker.md)
 ### 3.6. Comment surveiller et dépanner un conteneur Docker ?
 
 ---
