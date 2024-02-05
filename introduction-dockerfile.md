@@ -46,3 +46,43 @@ Un Dockerfile de base suit généralement cette structure :
 5. Définir les ports à exposer avec `EXPOSE` (si nécessaire).
 6. Définir la commande par défaut avec `CMD`.
 
+
+### 4.3.2.5 Exemple basique de Dockerfile
+
+```Dockerfile
+# Utilise l'image officielle Nginx comme image de base
+FROM nginx:alpine
+
+# Définit le répertoire de travail dans le conteneur
+WORKDIR /usr/share/nginx/html
+
+# Copie les fichiers de l'application web statique depuis le répertoire actuel vers le répertoire de travail dans le conteneur
+COPY . .
+
+# Expose le port 80
+EXPOSE 80
+
+# Utilise la commande par défaut de l'image Nginx pour démarrer le serveur
+CMD ["nginx", "-g", "daemon off;"]
+```
+
+Explications :
+
+- **`FROM nginx:alpine`** : Cette ligne indique que l'image sera construite à partir de l'image officielle Nginx utilisant la version "alpine", qui est une version légère d'Alpine Linux. Cela sert de point de départ et fournit Nginx prêt à l'emploi.
+
+- **`WORKDIR /usr/share/nginx/html`** : Cette commande définit le répertoire de travail dans le conteneur. C'est là que les fichiers de notre site seront servis par Nginx.
+
+- **`COPY . .`** : L'instruction `COPY` est utilisée pour copier des fichiers et des dossiers de votre machine locale dans l'image Docker que vous êtes en train de construire. Cette commande prend deux arguments principaux : le premier spécifie le chemin source (où les fichiers se trouvent sur votre machine) et le second spécifie le chemin de destination (où les fichiers seront placés dans l'image Docker).
+
+Dans cet exemple `COPY . .`, les deux points sont utilisés pour indiquer :
+    - Le premier `.` (point) représente le répertoire dans lequel se trouve le Dockerfile sur votre machine locale. Cela signifie "prendre tous les fichiers et dossiers présents dans ce répertoire".
+    - Le deuxième `.` (point) se réfère au répertoire de travail actuel à l'intérieur de l'image Docker, qui a été défini préalablement par l'instruction `WORKDIR`. Si, par exemple, `WORKDIR /usr/share/nginx/html` a été spécifié, alors le deuxième `.` représente ce chemin dans l'image Docker.
+
+Ainsi, `COPY . .` signifie "copier tous les fichiers et dossiers du répertoire courant (où se trouve le Dockerfile sur la machine locale) dans le répertoire de travail actuel à l'intérieur de l'image Docker".
+
+C'est une manière concise de transférer le contenu de votre application (comme les fichiers HTML, CSS, JavaScript pour un site web) de votre environnement de développement vers l'environnement de l'image Docker, permettant à cette dernière d'accéder aux fichiers nécessaires pour exécuter l'application.
+
+- **`EXPOSE 80`** : Indique que le conteneur écoute sur le port 80. C'est le port par défaut pour le trafic web HTTP.
+
+- **`CMD ["nginx", "-g", "daemon off;"]`** : Définit la commande par défaut pour le conteneur, qui dans ce cas, démarre le serveur Nginx en mode foreground (pas en tant que daemon). Cela permet au conteneur de rester actif et de servir le site web.
+
