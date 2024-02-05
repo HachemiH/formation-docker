@@ -74,13 +74,13 @@ Explications :
 
 - **`COPY . .`** : L'instruction `COPY` est utilisée pour copier des fichiers et des dossiers de votre machine locale dans l'image Docker que vous êtes en train de construire. Cette commande prend deux arguments principaux : le premier spécifie le chemin source (où les fichiers se trouvent sur votre machine) et le second spécifie le chemin de destination (où les fichiers seront placés dans l'image Docker).
 
-Dans cet exemple `COPY . .`, les deux points sont utilisés pour indiquer :
+    Dans cet exemple `COPY . .`, les deux points sont utilisés pour indiquer :
     - Le premier `.` (point) représente le répertoire dans lequel se trouve le Dockerfile sur votre machine locale. Cela signifie "prendre tous les fichiers et dossiers présents dans ce répertoire".
     - Le deuxième `.` (point) se réfère au répertoire de travail actuel à l'intérieur de l'image Docker, qui a été défini préalablement par l'instruction `WORKDIR`. Si, par exemple, `WORKDIR /usr/share/nginx/html` a été spécifié, alors le deuxième `.` représente ce chemin dans l'image Docker.
 
-Ainsi, `COPY . .` signifie "copier tous les fichiers et dossiers du répertoire courant (où se trouve le Dockerfile sur la machine locale) dans le répertoire de travail actuel à l'intérieur de l'image Docker".
+    Ainsi, `COPY . .` signifie "copier tous les fichiers et dossiers du répertoire courant (où se trouve le Dockerfile sur la machine locale) dans le répertoire de travail actuel à l'intérieur de l'image Docker".
 
-C'est une manière concise de transférer le contenu de votre application (comme les fichiers HTML, CSS, JavaScript pour un site web) de votre environnement de développement vers l'environnement de l'image Docker, permettant à cette dernière d'accéder aux fichiers nécessaires pour exécuter l'application.
+    C'est une manière concise de transférer le contenu de votre application (comme les fichiers HTML, CSS, JavaScript pour un site web) de votre environnement de développement vers l'environnement de l'image Docker, permettant à cette dernière d'accéder aux fichiers nécessaires pour exécuter l'application.
 
 - **`EXPOSE 80`** : Indique que le conteneur écoute sur le port 80. C'est le port par défaut pour le trafic web HTTP.
 
