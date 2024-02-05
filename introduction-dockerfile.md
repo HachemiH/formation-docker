@@ -84,5 +84,11 @@ Explications :
 
 - **`EXPOSE 80`** : Indique que le conteneur écoute sur le port 80. C'est le port par défaut pour le trafic web HTTP.
 
-- **`CMD ["nginx", "-g", "daemon off;"]`** : Définit la commande par défaut pour le conteneur, qui dans ce cas, démarre le serveur Nginx en mode foreground (pas en tant que daemon). Cela permet au conteneur de rester actif et de servir le site web.
+- **`CMD ["nginx", "-g", "daemon off;"]`** : L'instruction `CMD ["nginx", "-g", "daemon off;"]` dans un Dockerfile est utilisée pour définir la commande par défaut qui sera exécutée au démarrage du conteneur. Voici une explication plus détaillée pour rendre cela plus clair :
+    - `CMD` est une instruction Dockerfile qui spécifie la commande à exécuter lorsque le conteneur démarre. Si le Dockerfile ne spécifie pas d'entrée (`ENTRYPOINT`), `CMD` définit à la fois la commande et les paramètres qui seront exécutés.
+    - Les crochets `["nginx", "-g", "daemon off;"]` dénotent la forme dite "exec" de l'instruction `CMD`, qui permet à Docker d'exécuter la commande directement, sans passer par un shell intermédiaire. Cela signifie que la commande est exécutée plus proprement et de manière plus sécurisée.
+    - `nginx` est le nom du programme à exécuter. Dans ce contexte, il démarre le serveur web Nginx.
+    - `-g "daemon off;"` est un paramètre passé à Nginx lors de son exécution. Par défaut, Nginx fonctionne comme un daemon, c'est-à-dire qu'il s'exécute en arrière-plan. Toutefois, dans un conteneur Docker, il est préférable que Nginx (ou tout processus principal) s'exécute au premier plan pour que Docker puisse correctement gérer et surveiller le processus. Le paramètre `-g "daemon off;"` indique à Nginx de ne pas démarrer comme un daemon, mais plutôt de s'exécuter au premier plan, ce qui est la pratique recommandée pour les conteneurs Docker.
+
+    En résumé, l'instruction `CMD ["nginx", "-g", "daemon off;"]` assure que le conteneur démarre le serveur web Nginx en mode non-daemon, permettant ainsi au conteneur de rester actif et au serveur web de répondre aux requêtes.
 
