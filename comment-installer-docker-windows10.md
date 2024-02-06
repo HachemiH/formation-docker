@@ -7,7 +7,7 @@ L'installation de Docker sur Windows 10 est un processus direct, adapté à tous
    - Rendez-vous sur le site officiel de Docker à l'adresse [docker.com](https://www.docker.com/products/docker-desktop) et téléchargez Docker Desktop pour Windows.
 
 2. **Installation de Docker Desktop :** 
-   - Une fois téléchargé, ouvrez le fichier d'installation et suivez les instructions. Cela installera Docker ainsi que les outils nécessaires comme Hyper-V et WSL 2 (sous-système Windows pour Linux) si votre système le supporte.
+   - Une fois téléchargé, ouvrez le fichier d'installation et suivez les instructions. Cela installera Docker ainsi que les outils nécessaires comme Hyper-V et WSL 2 (sous-système Linux pour Windows) si votre système le supporte.
 
 3. **Redémarrage de votre Ordinateur :**
    - Après l'installation, un redémarrage de votre ordinateur peut être nécessaire pour finaliser la configuration de Docker.
