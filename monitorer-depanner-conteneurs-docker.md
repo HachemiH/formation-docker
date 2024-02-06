@@ -21,7 +21,7 @@ La surveillance et le dépannage des conteneurs Docker sont cruciaux pour le mai
 
 - **Inspecter un Conteneur :**
   - Commande : `docker inspect [CONTENEUR]`
-    - Fournit des informations détaillés sur la configuration du conteneur, incluant la configuration réseau, les volumes montés, et d'autres métadonnées importantes.
+    - Fournit des informations détaillées sur la configuration du conteneur, incluant la configuration réseau, les volumes montés, et d'autres métadonnées importantes.
 
 - **Exécution de Commandes de Diagnostic à l'Intérieur d'un Conteneur :**
   - Commande : `docker exec -it [CONTENEUR] [COMMANDE]`
