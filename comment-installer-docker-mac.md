@@ -2,7 +2,7 @@
 
 Installer Docker sur MacOS est un processus simple et direct. Docker Desktop pour Mac est l'application officielle qui permet d'exécuter Docker sur un système MacOS.
 
-## Étapes pour Installer Docker Desktop sur MacOS
+## 2.2.1 Étapes pour Installer Docker Desktop sur MacOS
 1. **Téléchargement de Docker Desktop :** 
    - Visitez le site officiel de Docker à l'adresse [docker.com](https://www.docker.com/products/docker-desktop) et téléchargez Docker Desktop pour MacOS.
 

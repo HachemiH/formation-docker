@@ -2,7 +2,7 @@
 
 La surveillance et le dépannage des conteneurs Docker sont cruciaux pour le maintien de la performance et la stabilité de vos applications. Voici les étapes et commandes essentielles pour effectuer ces tâches :
 
-## Surveillance des Conteneurs
+## 3.6.1 Surveillance des Conteneurs
 
 - **Lister les Conteneurs Actifs et Inactifs :**
   - Commande : `docker ps -a`
@@ -17,7 +17,7 @@ La surveillance et le dépannage des conteneurs Docker sont cruciaux pour le mai
   - Commande : `docker stats`
     - Affiche l'utilisation des ressources (CPU, mémoire, réseau) par les conteneurs en temps réel.
 
-## Dépannage des Conteneurs
+## 3.6.2 Dépannage des Conteneurs
 
 - **Inspecter un Conteneur :**
   - Commande : `docker inspect [CONTENEUR]`

@@ -1,6 +1,6 @@
 # 2.3 Comment installer Docker sur Linux
 
-## Étapes d'installation
+## 2.3.1 Étapes d'installation
 
 1. **Vérification de la compatibilité** :
    - Assurez-vous que votre système est compatible avec Docker Desktop.

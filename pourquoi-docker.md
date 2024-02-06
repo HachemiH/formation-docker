@@ -1,7 +1,7 @@
 # 1.3 Pourquoi utiliser Docker ? Quels problèmes résout-il et quels sont ses avantages ?
 
 
-## Problèmes Résolus par Docker
+## 1.3.1 Problèmes Résolus par Docker
 1. **Incohérences entre Environnements :** Assure une cohérence entre les environnements de développement, de test et de production.
    - Exemple : Une application qui fonctionne sur l'ordinateur d'un développeur mais rencontre des erreurs sur un autre système. Docker garantit la même configuration partout, éliminant le classique "ça marche sur ma machine".
 
@@ -11,7 +11,7 @@
 3. **Complexité de Déploiement :** Simplification du déploiement d'applications complexes.
    - Exemple : Déploiement d'une application web complexe avec base de données, serveur web, et autres services. Docker permet de "containeriser" chaque service pour simplifier le déploiement et la maintenance.
 
-## Avantages de Docker
+## 1.3.2 Avantages de Docker
 1. **Portabilité :** Fonctionne sur toute machine avec Docker, indépendamment du système d'exploitation.
    - Exemple : Une application Dockerisée peut être exécutée aussi bien sur un ordinateur Windows, un Mac ou un serveur Linux sans aucune modification.
 
