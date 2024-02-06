@@ -1,6 +1,6 @@
 # 3.1. Quelle est la différence entre un conteneur Docker et une image Docker ?
 
-Pour bien comprendre cette différence, introduisons d'abord le concept d'une "instance".
+Pour bien comprendre cette différence, introduisons d'abord le concept d'**instance**.
 
 ## Instance :
 Imaginez une chanson sur une plateforme de streaming comme Spotify. Chaque fois que vous jouez cette chanson, vous créez une "instance" de cette chanson. Même si la chanson originale est la même pour tout le monde, chaque écoute est une instance unique pour l'auditeur.
