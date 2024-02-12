@@ -1,6 +1,6 @@
 # 4.5 Optimisation des Images Docker
 
-Optimiser les images Docker est une étape essentielle pour améliorer l'efficacité, réduire les coûts de stockage et accélérer le temps de déploiement. Voici quelques stratégies pour optimiser vos images Docker.
+Optimiser les images Docker est une étape essentielle pour améliorer l'efficacité, réduire les coûts de stockage et accélérer le temps de déploiement. Voici une introduction à quelques stratégies pour optimiser vos images Docker.
 
 ## 4.5.1 Utilisation d'Images de Base Légères
 
