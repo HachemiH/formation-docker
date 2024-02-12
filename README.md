@@ -36,9 +36,12 @@
 ---
 
 ## Module 5.0 : Stockage dans Docker
-### 5.1. Comment utiliser les volumes Docker ?
-#### 5.1.1. Comment créer et gérer un volume Docker ?
-#### 5.1.2. Comment monter un volume dans un conteneur Docker ?
+## 5.1 Introduction au Stockage dans Docker
+## 5.2 Les Volumes Docker
+## 5.3 Les Bind Mounts
+## 5.4 Les Tmpfs Mounts
+## 5.5 Stockage et Sécurité
+## 5.6 Exemples Pratiques et Exercices
 
 ---
 
