@@ -38,26 +38,19 @@
 ## Module 5.0 : Stockage dans Docker
 ### 5.1. Comment utiliser les volumes Docker ?
 #### 5.1.1. Comment créer et gérer un volume Docker ?
-- `docker volume create [nom_volume]`
 #### 5.1.2. Comment monter un volume dans un conteneur Docker ?
-- `docker run -v [nom_volume]:[chemin_dans_conteneur]`
 
 ---
 
 ## Module 6.0 : Réseautage dans Docker
 ### 6.1. Quels sont les concepts de base du réseau dans Docker ?
 #### 6.1.1. Comment afficher les réseaux Docker disponibles ?
-- `docker network ls`
 #### 6.1.2. Comment créer un réseau Docker ?
-- `docker network create [nom_reseau]`
 ### 6.2. Comment connecter des conteneurs à des réseaux Docker ?
 #### 6.2.1. Comment connecter un conteneur à un réseau spécifique ?
-- `docker run --network=[nom_reseau] [IMAGE]`
 
 ---
 
 ## Module 7.0 : Docker Compose et Orchestration
 ### 7.1. Qu'est-ce que Docker Compose et comment l'utiliser ?
 #### 7.1.1. Comment démarrer et arrêter des services avec Docker Compose ?
-- `docker-compose up`
-- `docker-compose down`
