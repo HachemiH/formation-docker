@@ -31,7 +31,7 @@
 ### [4.4. Construction d'une Image Docker à partir d'un Dockerfile](./construction-image-personnalisee-docker.md)
 ### [4.5. Optimisation des Images Docker](./optimisation-images-docker.md)
 ### [4.6. Gestion des Tags et Versions dans les Images Docker](./gestion-tags-versions-images-docker.md)
-### 4.7. Partage et Distribution d'Images Docker
+### [4.7. Partage et Distribution d'Images Docker](./partage-distributions-images-docker.md)
 
 ---
 
