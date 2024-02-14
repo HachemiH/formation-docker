@@ -45,7 +45,7 @@ Les volumes Docker sont utilisés pour persister et partager des données entre 
    ```bash
    docker run -d -v mon_volume:/data mon_image
    ```
-L'option `-d` signifie "détaché", ce qui permet au conteneur de s'exécuter en arrière-plan. L'option `-v` permet de monter `mon_volume` sur le répertoire `/data` du conteneur, ce qui assure la persistance des données de la base de données SQLite.
+L'option `-d` signifie "détaché", ce qui permet au conteneur de s'exécuter en arrière-plan. L'option `-v` permet de monter `mon_volume` sur le répertoire `/data` du conteneur, ce qui assure la persistance des données.
 Toutes les données écrites par le conteneur dans `/data` seront persistées dans `mon_volume`, même après l'arrêt ou la suppression du conteneur.
 
 Ces commandes de base constituent le fondement de la gestion des volumes dans Docker, offrant une méthode simple mais puissante pour gérer la persistance des données dans les environnements conteneurisés. En partant de ces commandes, vous pouvez progressivement explorer des utilisations plus avancées des volumes, comme partager des données entre plusieurs conteneurs ou utiliser des volumes pour des bases de données, comme illustré précédemment.
