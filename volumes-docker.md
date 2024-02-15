@@ -72,9 +72,14 @@ Après avoir vu comment gérer les volumes dans Docker, il est essentiel de comp
      ```bash
      docker run -d -v mon_volume:/var/lib/postgresql/data postgres
      ```
-     Cette commande démarre un conteneur PostgreSQL avec `mon_volume` monté sur le répertoire de données de PostgreSQL, garantissant la persistance des données de la base de données.
+        - `docker run` : C'est la commande pour créer et démarrer un nouveau conteneur Docker.
+        - `-d` : Cette option signifie "détaché" et indique à Docker d'exécuter le conteneur en arrière-plan. Cela permet à l'utilisateur de continuer à utiliser le terminal pour d'autres commandes pendant que le conteneur s'exécute.
+        - `-v mon_volume:/var/lib/postgresql/data` : Cette option spécifie un montage de volume. Elle indique à Docker de monter le volume nommé `mon_volume` dans le système de fichiers du conteneur à l'emplacement `/var/lib/postgresql/data`. C'est le répertoire où PostgreSQL stocke ses données, permettant ainsi la persistance des données de la base de données entre les redémarrages ou mises à jour du conteneur.
+        - `postgres` : C'est le nom de l'image Docker à utiliser pour créer le conteneur. Dans ce cas, `postgres` fait référence à l'image officielle PostgreSQL disponible sur Docker Hub. Cette image contient tout le nécessaire pour exécuter un serveur PostgreSQL, incluant le logiciel PostgreSQL lui-même et les configurations de base. Lorsque vous spécifiez simplement `postgres`, Docker va chercher cette image sur Docker Hub (ou dans votre cache local d'images, s'il l'a déjà téléchargée auparavant) et l'utilisera pour créer le conteneur.
 
-#### Avantages de l'Utilisation des Volumes pour les Bases de Données
+En résumé, cette commande lance un conteneur PostgreSQL en arrière-plan, utilise un volume pour la persistance des données de la base de données, et se base sur l'image officielle PostgreSQL de Docker Hub.
+
+### Avantages de l'Utilisation des Volumes pour les Bases de Données
 
 - **Persistance des Données** : Les volumes garantissent que les données restent sauvegardées en dehors du conteneur, préservant vos données lors des mises à jour ou suppressions de conteneurs.
 - **Performance** : Les volumes peuvent offrir un accès plus rapide aux données comparé aux couches d'écriture du conteneur.
