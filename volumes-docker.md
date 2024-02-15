@@ -58,24 +58,46 @@ Après avoir vu comment gérer les volumes dans Docker, il est essentiel de comp
 
 #### Exemple Pratique : Persistance de Données pour une Base de Données
 
-1. **Base de Données SQLite** :
-   - Utiliser un volume Docker permet de s'assurer que la base de données SQLite reste intacte même après la suppression ou la recréation du conteneur.
-   - **Exemple de commande** :
-     ```bash
-     docker run -d -v mon_volume:/db mon_image_sqlite
-     ```
-     Cette commande lance un conteneur avec une application utilisant SQLite, montant `mon_volume` sur le répertoire `/db` du conteneur, ce qui assure la persistance des données de la base de données SQLite.
+##### Exemple Pratique avec SQLite
 
-2. **Base de Données PostgreSQL** :
-   - Pour une base de données comme PostgreSQL, qui stocke ses données dans un répertoire spécifié, utiliser un volume Docker assure la persistance des données entre les redémarrages du conteneur ou les mises à jour de l'image.
-   - **Exemple de commande** :
-     ```bash
-     docker run -d -v mon_volume:/var/lib/postgresql/data postgres
-     ```
-        - `docker run` : C'est la commande pour créer et démarrer un nouveau conteneur Docker.
-        - `-d` : Cette option signifie "détaché" et indique à Docker d'exécuter le conteneur en arrière-plan. Cela permet à l'utilisateur de continuer à utiliser le terminal pour d'autres commandes pendant que le conteneur s'exécute.
-        - `-v mon_volume:/var/lib/postgresql/data` : Cette option spécifie un montage de volume. Elle indique à Docker de monter le volume nommé `mon_volume` dans le système de fichiers du conteneur à l'emplacement `/var/lib/postgresql/data`. C'est le répertoire où PostgreSQL stocke ses données, permettant ainsi la persistance des données de la base de données entre les redémarrages ou mises à jour du conteneur.
-        - `postgres` : C'est le nom de l'image Docker à utiliser pour créer le conteneur. Dans ce cas, `postgres` fait référence à l'image officielle PostgreSQL disponible sur Docker Hub. Cette image contient tout le nécessaire pour exécuter un serveur PostgreSQL, incluant le logiciel PostgreSQL lui-même et les configurations de base. Lorsque vous spécifiez simplement `postgres`, Docker va chercher cette image sur Docker Hub (ou dans votre cache local d'images, s'il l'a déjà téléchargée auparavant) et l'utilisera pour créer le conteneur.
+**Scenario** : Vous souhaitez exécuter une application web simple qui utilise une base de données SQLite pour stocker des données. Pour s'assurer que ces données restent persistantes entre les redémarrages du conteneur, vous utilisez un volume Docker.
+
+1. **Création d'un Volume** : Commencez par créer un volume Docker où vos données de base de données seront stockées. 
+   ```bash
+   docker volume create sqlite-data
+   ```
+
+2. **Exécution du Conteneur avec le Volume Monté** : Lancez votre conteneur en montant le volume créé à l'emplacement où votre application s'attend à trouver la base de données SQLite.
+   ```bash
+   docker run -d -v sqlite-data:/app/data my-web-app
+   ```
+   - Dans cet exemple, `my-web-app` est l'image de votre application web qui utilise SQLite.
+   - `/app/data` est le dossier dans votre conteneur où l'application stocke les fichiers de base de données SQLite. Le volume `sqlite-data` est monté à cet emplacement, ce qui rend les données persistantes.
+
+**Ce qu'il se passe** : Avec cette configuration, toutes les données générées par votre application et stockées dans la base de données SQLite sont écrites dans le volume `sqlite-data`. Même si le conteneur est arrêté, supprimé, ou redéployé, les données restent accessibles et intactes dans le volume.
+
+
+##### Exemple Pratique avec PostgreSQL
+
+**Scenario** : Vous configurez un serveur PostgreSQL dans un conteneur Docker et souhaitez garantir que les données restent persistantes pour une application qui nécessite une base de données robuste.
+
+1. **Création d'un Volume pour PostgreSQL** : Tout comme avec SQLite, créez un volume pour stocker les données de PostgreSQL.
+   ```bash
+   docker volume create pgdata
+   ```
+
+2. **Lancement de PostgreSQL avec un Volume Monté** : Démarrez le conteneur PostgreSQL en montant le volume `pgdata` sur le répertoire de stockage de données de PostgreSQL.
+   ```bash
+   docker run -d -v pgdata:/var/lib/postgresql/data postgres
+   ```
+    - `docker run` : C'est la commande pour créer et démarrer un nouveau conteneur Docker.
+    - `-d` : Cette option signifie "détaché" et indique à Docker d'exécuter le conteneur en arrière-plan. Cela permet à l'utilisateur de continuer à utiliser le terminal pour d'autres commandes pendant que le conteneur s'exécute.
+    - `-v pgdata:/var/lib/postgresql/data` : Cette option spécifie un montage de volume. Elle indique à Docker de monter le volume nommé `pgdata` dans le système de fichiers du conteneur à l'emplacement `/var/lib/postgresql/data`. C'est le répertoire où PostgreSQL stocke ses données, permettant ainsi la persistance des données de la base de données entre les redémarrages ou mises à jour du conteneur.
+   - `postgres` est l'image Docker officielle de PostgreSQL.
+   - `/var/lib/postgresql/data` est l'emplacement par défaut où PostgreSQL stocke ses données dans le conteneur. En montant le volume `pgdata` à cet emplacement, vous assurez la persistance des données.
+
+**Ce qu'il se passe** : Peu importe les opérations effectuées dans la base de données, les modifications seront sauvegardées dans le volume `pgdata`. Cela signifie que vous pouvez mettre à jour, redémarrer, ou même supprimer et recréer votre conteneur PostgreSQL sans perdre de données.
+
 
 En résumé, cette commande lance un conteneur PostgreSQL en arrière-plan, utilise un volume pour la persistance des données de la base de données, et se base sur l'image officielle PostgreSQL de Docker Hub.
 
