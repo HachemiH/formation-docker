@@ -88,10 +88,11 @@ Après avoir vu comment gérer les volumes dans Docker, il est essentiel de comp
 
 2. **Lancement de PostgreSQL avec un Volume Monté** : Démarrez le conteneur PostgreSQL en montant le volume `pgdata` sur le répertoire de stockage de données de PostgreSQL.
    ```bash
-   docker run -d -v pgdata:/var/lib/postgresql/data postgres
+   docker run -d --env-file pg_credentials.env -v pgdata:/var/lib/postgresql/data postgres
    ```
     - `docker run` : C'est la commande pour créer et démarrer un nouveau conteneur Docker.
     - `-d` : Cette option signifie "détaché" et indique à Docker d'exécuter le conteneur en arrière-plan. Cela permet à l'utilisateur de continuer à utiliser le terminal pour d'autres commandes pendant que le conteneur s'exécute.
+    - `--env-file` : Cette option permet de spécifier un fichier contenant des variables d'environnement. Dans le cas de PostgreSQL, le fichier contiendrait les variables `POSTGRES_USER` et `POSTGRES_PASSWORD`. Sans variable d'environnement le container se refermera directement.
     - `-v pgdata:/var/lib/postgresql/data` : Cette option spécifie un montage de volume. Elle indique à Docker de monter le volume nommé `pgdata` dans le système de fichiers du conteneur à l'emplacement `/var/lib/postgresql/data`. C'est le répertoire où PostgreSQL stocke ses données, permettant ainsi la persistance des données de la base de données entre les redémarrages ou mises à jour du conteneur.
    - `postgres` est l'image Docker officielle de PostgreSQL.
    - `/var/lib/postgresql/data` est l'emplacement par défaut où PostgreSQL stocke ses données dans le conteneur. En montant le volume `pgdata` à cet emplacement, vous assurez la persistance des données.
