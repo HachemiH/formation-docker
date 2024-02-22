@@ -1,9 +1,9 @@
-# 2. Chercher l'image nommée `nginx` sur DockerHub.
+# 3. Récupérer l'image sur votre machine.
 
-Pour trouver l'image `nginx` sur <a href='https://hub.docker.com/'>DockerHub</a>, il fallait utiliser la barre de recherche.
+Pour récupérer l'image nginx sur votre machine, il suffisait de copier la commande indiquée sur la page DockerHub.
 
-![](./assets/search-step.png)
+![](./assets/command.png)
 
-Et cliquer sur le premier résultat.
+Et de l'exécuter dans votre shell :
 
-![](./assets/nginx-docker-hub.png)
+![](./assets/shell.png)
