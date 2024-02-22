@@ -1,59 +1,39 @@
-# Formation Docker
+# TP sur les Conteneurs et les Images Docker
 
-## Module 1.0 : Introduction à Docker
-### [1.1. Quelle est la différence entre `Bare Metal`, `Virtual Machine` et `Container` ?](./bare-metal-virtual-machine-container.md)
-### [1.2. Qu'est-ce que Docker ?](./intro-docker.md)
-### [1.3. Pourquoi utiliser Docker ? Quels problèmes résout-il et quels sont ses avantages ?](./pourquoi-docker.md)
+1. Créer un compte sur DockerHub.
+2. Chercher l'image nommée `nginx` sur DockerHub.
+3. Récupérer l'image sur votre machine.
+4. Lister **tous** les conteneurs de la machine.
+5. Démarrer un conteneur de l'image `nginx` en suivant les recommandations de l'image de la page DockerHub.
+6. Vérifier que le conteneur tourne via Docker.
+7. Vérifier que le conteneur fonctionne via votre navigateur (Informations sur la page de l'image DockerHub).
+8. Lister toutes les images Docker.
+9. Exécuter la commande `echo Hello World` dans le conteneur **sans entrer en mode interactif**.
+10. Exécuter la même commande **en entrant en mode interactif**.
+11. Afficher les logs du conteneur `nginx`.
+12. Afficher l'utilisation de ressources du conteneur `nginx`.
+13. Afficher des informations détaillées sur le conteneur `nginx`.
+14. Supprimer l'image `nginx` **proprement** :
+    1. Si cela fonctionne, quel est le retour de la commande ?
+    2. Si cela ne fonctionne pas, pourquoi ?
+15. Vérifier la suppression de l'image.
 
----
+# TP sur les Conteneurs et les Images Docker (Docker Desktop)
 
-## Module 2.0 : Installation de Docker
-### [2.1. Comment installer Docker sur Windows ?](./comment-installer-docker-windows10.md)
-### [2.2. Comment installer Docker sur MacOS ?](./comment-installer-docker-mac.md)
-### [2.3. Comment installer Docker sur Linux ?](./comment-installer-docker-linux.md)
+Ce TP reprend sensiblement les mêmes opérations que le TP précédent, cependant, dans ce TP, **vous devez exécuter toutes les actions avec Docker Desktop**.
 
----
-
-## Module 3.0 : Fondamentaux des Conteneurs et des Images
-### [3.1. Quelle est la différence entre un conteneur Docker et une image Docker ?](./conteneur-vs-image-docker.md)
-### [3.2. Registres Docker et Docker Hub](./docker-hub.md)
-### [3.3. Comment gérer les images Docker ?](./comment-gerer-les-images-docker.md)
-### [3.4. Comment gérer les conteneurs Docker ?](./comment-gerer-les-conteneurs-docker.md)
-### [3.5. Comment exécuter des commandes à l'intérieur d'un conteneur Docker ?](./executer-commandes-dans-conteneur-docker.md)
-### [3.6. Comment surveiller et dépanner un conteneur Docker ?](./monitorer-depanner-conteneurs-docker.md)
-
----
-
-## Module 4.0 : Gestion Avancée des Images
-### [4.1 Prérequis pour la Création d'Images Docker Personnalisées](./prerequis-creation-images-docker.md)
-### [4.2 Pourquoi construire une image Docker personnalisée ?](./pourquoi-construire-une-image-docker-personnalisee.md)
-### [4.3. Introduction au Dockerfile](./introduction-dockerfile.md)
-### [4.4. Construction d'une Image Docker à partir d'un Dockerfile](./construction-image-personnalisee-docker.md)
-### [4.5. Optimisation des Images Docker](./optimisation-images-docker.md)
-### [4.6. Gestion des Tags et Versions dans les Images Docker](./gestion-tags-versions-images-docker.md)
-### [4.7. Partage et Distribution d'Images Docker](./partage-distributions-images-docker.md)
-
----
-
-## Module 5.0 : Stockage dans Docker
-### [5.1 Introduction au Stockage dans Docker](./introduction-stockage-docker.md)
-### [5.2 Les Volumes Docker](./volumes-docker.md)
-### [5.3 Les Bind Mounts](./bind-mounts-docker.md)
-### 5.4 Les Tmpfs Mounts
-### 5.5 Stockage et Sécurité
-### 5.6 Exemples Pratiques et Exercices
-
----
-
-## Module 6.0 : Réseautage dans Docker
-### 6.1. Quels sont les concepts de base du réseau dans Docker ?
-#### 6.1.1. Comment afficher les réseaux Docker disponibles ?
-#### 6.1.2. Comment créer un réseau Docker ?
-### 6.2. Comment connecter des conteneurs à des réseaux Docker ?
-#### 6.2.1. Comment connecter un conteneur à un réseau spécifique ?
-
----
-
-## Module 7.0 : Docker Compose et Orchestration
-### 7.1. Qu'est-ce que Docker Compose et comment l'utiliser ?
-#### 7.1.1. Comment démarrer et arrêter des services avec Docker Compose ?
+1. Lier le compte DockerHub créé précédemment à Docker Desktop.
+2. Chercher l'image nommée `nginx`.
+3. Récupérer l'image sur votre machine.
+4. Consulter la liste de tous les conteneurs en cours d'exécution.
+5. Démarrer un conteneur de l'image `nginx` en suivant les recommandations de l'image.
+6. Vérifier que le conteneur tourne.
+7. Consulter la liste des images.
+8. Exécuter la commande `echo Hello World` dans le conteneur.
+9. Consulter les logs du conteneur `nginx`.
+10. Consulter l'onglet concernant l'utilisation des ressources.
+11. Consulter les informations détaillées du conteneur.
+12. Supprimer l'image `nginx` **proprement** :
+    1. Si cela fonctionne, quel est le retour de la commande ?
+    2. Si cela ne fonctionne pas, pourquoi ?
+13. Vérifier la suppression de l'image `nginx`.
