@@ -1,7 +1,18 @@
-# 4. Lister tous les conteneurs de la machine.
+# 5. Démarrer un conteneur de l'image `nginx` en suivant les recommandations de l'image sur la page DockerHub.
 
-Pour lister **tous** les conteneurs de la machine, il fallait exécuter la commande `docker ps -a` :
+Pour démarrer un conteneur de l'image `nginx`, il fallait lire la documentation présente sur la page DockerHub.
 
-![](./assets/command.png)
+![Image DockerHub](./assets/docker-hub.png)
 
-Ce qui a pour effet d'afficher les conteneurs (Ici, aucun conteneur ne tourne ou n'est arreté).
+Ensuite, vous deviez taper la commande suivante dans le shell :
+
+![Shell](./assets/shell.png)
+
+Détaillons la commande `docker run -d -p 80:80 nginx` :
+
+1. `docker run` : Permet de dire à Docker de lancer un conteneur.
+2. `-d` : Cette option permet de détacher le processus d'exécution du conteneur de celui du shell.
+3. `-p` : Cette option permet d'exposer un port dans le conteneur.
+4. `nginx` : Représente le nom de l'image.
+
+La ligne en dessous représente l'ID du conteneur.
