@@ -16,7 +16,7 @@
 14. Supprimer l'image `nginx` **proprement** :
     1. Si cela fonctionne, quel est le retour de la commande ?
     2. Si cela ne fonctionne pas, pourquoi ?
-15. Verifier la suppression de l'image.
+15. Vérifier la suppression de l'image.
 
 # TP sur les Conteneurs et les Images Docker (Docker Desktop)
 
