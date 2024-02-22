@@ -1,9 +1,7 @@
-# 3. Récupérer l'image sur votre machine.
+# 4. Lister tous les conteneurs de la machine.
 
-Pour récupérer l'image nginx sur votre machine, il suffisait de copier la commande indiquée sur la page DockerHub.
+Pour lister **tous** les conteneurs de la machine, il fallait exécuter la commande `docker ps -a` :
 
 ![](./assets/command.png)
 
-Et de l'exécuter dans votre shell :
-
-![](./assets/shell.png)
+Ce qui a pour effet d'afficher les conteneurs (Ici, aucun conteneur ne tourne ou n'est arreté).
