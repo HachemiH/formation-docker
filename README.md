@@ -1,5 +1,9 @@
 # TP sur les Conteneurs et les Images Docker
 
+Ce TP reprend les notions du module 3.0 sur les Conteneurs et les images. Il est divisé en 2 parties. Dans la première partie, vous n'utilisez pas Docker Desktop.
+
+# Partie 1 (Sans Docker Desktop)
+
 1. Créer un compte sur DockerHub.
 2. Chercher l'image nommée `nginx` sur DockerHub.
 3. Récupérer l'image sur votre machine.
@@ -18,7 +22,7 @@
     2. Si cela ne fonctionne pas, pourquoi ?
 15. Vérifier la suppression de l'image.
 
-# TP sur les Conteneurs et les Images Docker (Docker Desktop)
+# Partie 2 (En utilisant Docker Desktop)
 
 Ce TP reprend sensiblement les mêmes opérations que le TP précédent, cependant, dans ce TP, **vous devez exécuter toutes les actions avec Docker Desktop**.
 
