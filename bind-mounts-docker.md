@@ -8,13 +8,30 @@ Les bind mounts sont particulièrement utiles en développement, offrant une man
 - **Accès Direct aux Données de l'Hôte** : Facilitent l'accès aux fichiers ou dossiers spécifiques de l'hôte depuis le conteneur.
 - **Persistance de Données** : Offrent une solution pour la persistance des données nécessitant un contrôle précis sur les chemins de fichiers.
 
-## 5.3.2 Création et Utilisation
+## 5.3.2 Différences entre les Bind Mounts et les Volumes
 
-### 5.3.2.1 Commandes Détaillées
+Bien que les bind mounts et les volumes permettent de persister des données dans Docker, ils fonctionnent de manière légèrement différente :
+
+- **Bind Mounts** : Directement liés au système de fichiers de l'hôte, permettant une interaction en temps réel avec les fichiers du conteneur. Ils nécessitent un chemin absolu.
+- **Volumes** : Gérés par Docker, offrant une couche d'abstraction et une meilleure portabilité. Ils sont recommandés pour la production en raison de leur facilité de sauvegarde et de transfert.
+
+
+## 5.3.3 Création et Utilisation
+
+### 5.3.3.1 Exemples Concrets
+
+**Développement d'une application web** :
+```bash
+docker run -d -v $(pwd):/app mon_image_web
+```
+Cet exemple montre comment monter le répertoire courant (contenant le code source de l'application web) dans le conteneur, permettant aux développeurs de voir les changements sans redémarrer le conteneur.
+
+
+### 5.4 Commandes Détaillées
 
 Les bind mounts dans Docker peuvent être spécifiés de deux manières lors du lancement d'un conteneur : via `-v` ou `--mount`.
 
-#### 5.3.2.1.1 Utilisation de `-v` ou `--volume`
+#### 5.4.1 Utilisation de `-v` ou `--volume`
 
 ```bash
 docker run -d -v /chemin/sur/hote:/chemin/dans/conteneur mon_image
@@ -24,7 +41,7 @@ docker run -d -v /chemin/sur/hote:/chemin/dans/conteneur mon_image
    - `/chemin/sur/hote` : Chemin absolu sur l'hôte.
    - `/chemin/dans/conteneur` : Chemin cible dans le conteneur.
 
-#### 5.3.2.1.2 Utilisation de `--mount`
+#### 5.4.2 Utilisation de `--mount`
 
 ```bash
 docker run -d --mount type=bind,source=/chemin/sur/hote,target=/chemin/dans/conteneur mon_image
@@ -34,9 +51,17 @@ docker run -d --mount type=bind,source=/chemin/sur/hote,target=/chemin/dans/cont
    - `source=/chemin/sur/hote` : Indique le chemin sur l'hôte.
    - `target=/chemin/dans/conteneur` : Définit le chemin cible dans le conteneur.
 
-### 5.3.2.2 Bonnes Pratiques
+### 5.5 Bonnes Pratiques
 
 - **Sécurité** : Prenez garde aux implications de sécurité, car les bind mounts permettent un accès direct aux systèmes de fichiers de l'hôte.
 - **Gestion des Chemins** : Veillez à une gestion précise des chemins pour prévenir les conflits ou les accès indésirables.
 - **Combinaison avec les Volumes** : Utilisez les bind mounts pour des besoins spécifiques de développement et préférez les volumes Docker pour la persistance des données à long terme.
+
+Les bind mounts offrent une flexibilité et une rapidité essentielles pour les développeurs travaillant avec Docker, mais il est important de les utiliser judicieusement pour maintenir la sécurité et l'efficacité de votre environnement de développement.
+
+
+### 5.6 Limitations et Considérations
+
+- **Chemin Absolu** : Les bind mounts nécessitent des chemins absolus, ce qui peut poser des problèmes de portabilité entre différents environnements de développement.
+- **Permissions** : Les différences de permissions entre l'hôte et le conteneur peuvent entraîner des problèmes d'accès aux fichiers montés.
 
