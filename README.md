@@ -40,7 +40,7 @@
 ### [5.2 Les Volumes Docker](./volumes-docker.md)
 ### [5.3 Les Bind Mounts](./bind-mounts-docker.md)
 ### [5.4 Les Tmpfs Mounts](./tmpfs-mounts-docker.md)
-### 5.5 Stockage et Sécurité
+### [5.5 Stockage et Sécurité](./stockage-securite-docker.md)
 ### 5.6 Exemples Pratiques et Exercices
 
 ---
