@@ -1,0 +1,85 @@
+# 7.1 Qu'est-ce que Docker Compose et comment l'utiliser ?
+
+Docker Compose est un outil qui permet de définir et de gérer des applications multi-conteneurs avec Docker. Au lieu d'utiliser de longues commandes `docker run` pour chaque conteneur, vous pouvez définir un ensemble de services dans un fichier `docker-compose.yaml`. Cela simplifie le lancement, la connexion et la gestion des conteneurs.
+
+
+## 7.1.1 Qu'est-ce que Docker Compose ?
+
+- **Simplification** : Docker Compose permet de lancer plusieurs conteneurs avec une seule commande, rendant la gestion des conteneurs plus simple et plus intuitive.
+- **Configuration as Code** : Toute la configuration des services est faite dans un fichier YAML, offrant une approche "configuration as code" pour déployer vos applications.
+- **Répétabilité** : Lancez votre application entière en utilisant une seule commande, ce qui garantit que vos environnements de développement, de test, et de production sont identiques.
+- **Facilité de maintenance** : Mettez à jour et reconstruisez facilement vos conteneurs en quelques commandes, facilitant ainsi les mises à jour et la maintenance.
+
+L'utilisation de Docker Compose est particulièrement utile pour le développement et le test d'applications, offrant une méthode rapide et efficace pour gérer les dépendances de l'application et les configurations spécifiques.
+
+## 7.1.2 Comment démarrer et arrêter des services avec Docker Compose ?
+
+Avec Docker Compose, démarrer et arrêter des services est simple. Après avoir défini vos services dans un fichier `docker-compose.yml`, vous pouvez utiliser les commandes suivantes pour contrôler votre application :
+
+- **Démarrer les services** : `docker-compose up` lance et crée les services définis dans votre fichier `docker-compose.yml`.
+- **Arrêter les services** : `docker-compose down` arrête et supprime les ressources utilisées par les services.
+
+Ces commandes simplifient grandement la gestion des applications conteneurisées, permettant aux développeurs de se concentrer sur le développement sans se soucier de la complexité de la gestion des conteneurs.
+
+
+## 7.1.3 Exemple Pratique : API, Base de Données PostgreSQL et Nginx
+
+Imaginons une application composée d'une API qui nécessite une base de données PostgreSQL et d'un serveur web Nginx agissant comme reverse proxy pour rendre l'API accessible sur le port 80.
+
+### Fichier `docker-compose.yaml` :
+
+```yaml
+version: '3'
+services:
+  api:
+    image: mon_api_image
+    environment:
+      DB_HOST: db
+      DB_PASSWORD: exemplepassword
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: exemplepassword
+      POSTGRES_DB: mon_api_db
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - api
+
+volumes:
+  db_data:
+```
+
+### Explications :
+
+- **`services`** : Définit les conteneurs de l'application.
+  - **`api`** : Le service API, qui a besoin de se connecter à la base de données.
+  - **`db`** : Le service PostgreSQL, utilisant un volume Docker pour la persistance des données.
+  - **`nginx`** : Le serveur web Nginx, configuré comme un reverse proxy pour l'API.
+    - **`ports`** : Expose le port 80 sur l'hôte pour accéder à Nginx.
+    - **`volumes`** : Montage du fichier de configuration Nginx pour configurer le reverse proxy.
+
+- **`volumes`** : Déclare un volume nommé `db_data` pour la persistance des données de PostgreSQL, assurant que les données survivent aux redémarrages du conteneur.
+
+### Lancer l'application :
+
+Pour démarrer tous les services définis dans le fichier `docker-compose.yaml`, utilisez :
+
+```bash
+docker-compose up
+```
+
+Cette commande lance l'ensemble de l'application, rendant l'API accessible via Nginx sur le port 80 de l'hôte, tout en assurant la persistance des données de la base de données grâce au volume `db_data`.
+
+Le fichier de configuration Nginx (`default.conf`) devrait être configuré pour rediriger les requêtes vers le service API, illustrant ainsi l'interconnexion et la collaboration entre les services dans un environnement Docker Compose.
+
