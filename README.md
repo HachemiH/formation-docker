@@ -52,5 +52,5 @@
 ---
 
 ## Module 7.0 : Docker Compose et Orchestration
-### 7.1. Qu'est-ce que Docker Compose et comment l'utiliser ?
+### [7.1. Qu'est-ce que Docker Compose et comment l'utiliser ?](./introduction-docker-compose.md)
 #### 7.1.1. Comment démarrer et arrêter des services avec Docker Compose ?
