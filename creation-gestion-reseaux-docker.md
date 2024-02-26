@@ -69,6 +69,4 @@ La création de réseaux Docker permet une communication sécurisée et isolée 
 - **Flexibilité** : Permet le déploiement d'architectures de microservices en facilitant la communication entre services de manière sécurisée et isolée.
 
 En intégrant la gestion des réseaux dans votre flux de travail Docker, vous bénéficiez d'une méthode robuste pour orchestrer la communication entre les conteneurs de vos applications, essentielle pour les architectures modernes basées sur les conteneurs.
-```
 
-Cette version enrichie inclut les bases de la gestion des réseaux dans Docker, de la création à la suppression, en passant par le listing des réseaux disponibles. Elle met en évidence l'importance de ces manipulations pour une gestion efficace de la communication entre conteneurs dans des environnements de développement et de production.
