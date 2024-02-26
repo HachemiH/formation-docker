@@ -42,7 +42,7 @@ docker run -d --name nginx_frontend --network mon_reseau -p 80:80 nginx
 
 - **Comprendre `-p 80:80` avec l'Analogie d'une Adresse Postale** :
 
-Imaginez que vous expliquez à quelqu'un comment trouver un appartement spécifique dans un immeuble situé au "6/3 rue du Boulevard". Ici, "6" pourrait représenter le numéro de l'immeuble, et "3" l'appartement spécifique dans cet immeuble. En Docker, quand vous utilisez `-p 80:80`, c'est similaire :
+Imaginez que vous expliquez à quelqu'un comment trouver un appartement spécifique dans un immeuble situé au "6/3 rue du Boulevard". Ici, "6" pourrait représenter le numéro de l'immeuble dans la rue, et "3" l'appartement spécifique dans cet immeuble. En Docker, quand vous utilisez `-p 80:80`, c'est similaire :
     - Le premier "80" est comme le numéro de l'immeuble ("6" dans notre analogie d'adresse), le port sur votre machine hôte. C'est la "rue" par laquelle les requêtes arrivent à votre système.
     - Le second "80", séparé par `:`, est comme le numéro de l'appartement ("3" dans notre analogie), le port à l'intérieur du conteneur. C'est la destination finale de la requête une fois qu'elle est entrée dans l'immeuble.
 
