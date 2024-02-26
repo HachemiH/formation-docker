@@ -46,7 +46,7 @@ Imaginez que vous expliquez à quelqu'un comment trouver un appartement spécifi
     - Le premier "80" est comme le numéro de l'immeuble ("6" dans notre analogie d'adresse), le port sur votre machine hôte. C'est la "rue" par laquelle les requêtes arrivent à votre système.
     - Le second "80", séparé par `:`, est comme le numéro de l'appartement ("3" dans notre analogie), le port à l'intérieur du conteneur. C'est la destination finale de la requête une fois qu'elle est entrée dans l'immeuble.
 
-    Ainsi, `-p 80:80` peut être interprété comme "pour atteindre cet appartement spécifique (le service dans le conteneur), commencez par venir à l'immeuble numéro 80 (le port de l'hôte) sur la rue du Boulevard (votre ordinateur), puis dirigez-vous vers l'appartement numéro 80 à l'intérieur (le port du conteneur)."
+Ainsi, `-p 80:80` peut être interprété comme "pour atteindre cet appartement spécifique (le service dans le conteneur), commencez par venir à l'immeuble numéro 80 (le port de l'hôte) sur la rue du Boulevard (votre ordinateur), puis dirigez-vous vers l'appartement numéro 80 à l'intérieur (le port du conteneur)."
 
 Cette analogie vise à clarifier le mappage des ports en Docker, facilitant la compréhension de comment les requêtes externes sont acheminées du monde extérieur vers une application spécifique exécutée dans un conteneur.
 
