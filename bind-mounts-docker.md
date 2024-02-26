@@ -27,11 +27,11 @@ docker run -d -v $(pwd):/app mon_image_web
 Cet exemple montre comment monter le répertoire courant (contenant le code source de l'application web) dans le conteneur, permettant aux développeurs de voir les changements sans redémarrer le conteneur.
 
 
-### 5.4 Commandes Détaillées
+### 5.3.4 Commandes Détaillées
 
 Les bind mounts dans Docker peuvent être spécifiés de deux manières lors du lancement d'un conteneur : via `-v` ou `--mount`.
 
-#### 5.4.1 Utilisation de `-v` ou `--volume`
+#### 5.3.4.1 Utilisation de `-v` ou `--volume`
 
 - **Syntaxe plus courte et plus ancienne** : L'option `-v` ou `--volume` utilise une syntaxe plus courte et est la méthode traditionnelle pour créer des bind mounts (et des volumes en général) avec Docker.
 - **Format de spécification** : La spécification du bind mount se fait par une chaîne de caractères simple, où le chemin sur l'hôte et le chemin dans le conteneur sont séparés par un deux-points (`:`).
@@ -45,7 +45,7 @@ docker run -d -v /chemin/sur/hote:/chemin/dans/conteneur mon_image
    - `/chemin/dans/conteneur` : Chemin cible dans le conteneur.
 
 
-### 5.4.2 Utilisation de `--mount`
+### 5.3.4.2 Utilisation de `--mount`
 
 ```bash
 docker run -d --mount type=bind,source=/chemin/sur/hote,target=/chemin/dans/conteneur mon_image
@@ -58,7 +58,7 @@ docker run -d --mount type=bind,source=/chemin/sur/hote,target=/chemin/dans/cont
 - **Syntaxe plus explicite et récente** : L'option `--mount` offre une syntaxe plus explicite et détaillée, introduite dans des versions ultérieures de Docker pour améliorer la clarté et la précision lors de la création de montages.
 - **Format de spécification** : La spécification du bind mount se fait par une série de paires clé-valeur, rendant la commande plus verbale mais aussi plus claire, en particulier pour des configurations plus complexes.
 
-#### Comparaison et Choix
+#### 5.3.5 Comparaison et Choix
 
 - **Choix entre les deux méthodes** : L'utilisation de `--mount` est généralement recommandée pour les nouvelles configurations car elle offre une syntaxe plus claire et réduit le risque d'erreurs. La méthode `-v` reste populaire pour sa brièveté et parce qu'elle est bien ancrée dans les habitudes des utilisateurs Docker de longue date.
 - **Compatibilité** : Les deux méthodes sont supportées par Docker et peuvent être utilisées selon les préférences personnelles et les exigences spécifiques du projet.
@@ -66,7 +66,7 @@ docker run -d --mount type=bind,source=/chemin/sur/hote,target=/chemin/dans/cont
 En résumé, la principale différence entre `-v` et `--mount` réside dans la syntaxe et la clarté de la spécification des bind mounts. Choisir entre les deux dépend des préférences de l'utilisateur et de la complexité de la configuration requise.
 
 
-### 5.5 Bonnes Pratiques
+### 5.3.6 Bonnes Pratiques
 
 - **Sécurité** : Prenez garde aux implications de sécurité, car les bind mounts permettent un accès direct aux systèmes de fichiers de l'hôte.
 - **Gestion des Chemins** : Veillez à une gestion précise des chemins pour prévenir les conflits ou les accès indésirables.
@@ -75,7 +75,7 @@ En résumé, la principale différence entre `-v` et `--mount` réside dans la s
 Les bind mounts offrent une flexibilité et une rapidité essentielles pour les développeurs travaillant avec Docker, mais il est important de les utiliser judicieusement pour maintenir la sécurité et l'efficacité de votre environnement de développement.
 
 
-### 5.6 Limitations et Considérations
+### 5.3.7 Limitations et Considérations
 
 - **Chemin Absolu** : Les bind mounts nécessitent des chemins absolus, ce qui peut poser des problèmes de portabilité entre différents environnements de développement.
 - **Permissions** : Les différences de permissions entre l'hôte et le conteneur peuvent entraîner des problèmes d'accès aux fichiers montés.
