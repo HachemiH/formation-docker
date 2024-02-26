@@ -22,6 +22,7 @@
   ```bash
   docker-compose restart [service_name]
   ```
+    Remplacez [service_name] par le nom du service à redémarrer. Omettez [service_name] pour redémarrer tous les services.
 
 ## Voir les Logs
 
