@@ -1,5 +1,9 @@
-# 11. Afficher les logs du conteneur nginx.
+# 12. Afficher l'utilisation de ressources du conteneur nginx.
 
-Pour afficher les logs du conteneur nginx il suffit d'exécuter la commande `docker logs` suivi du nom ou de l'ID du conteneur.
+Pour afficher l'utilisation de ressources d'un conteneur.
 
 ![](./assets/shell.png)
+
+Ce qui produit le résultat :
+
+![](./assets/shell-2.png)
