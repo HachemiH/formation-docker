@@ -34,8 +34,7 @@ services:
   api:
     image: mon_api_image
     environment:
-      DB_HOST: db
-      DB_PASSWORD: exemplepassword
+      DB_URL: url_to_db
     depends_on:
       - db
 
@@ -43,7 +42,7 @@ services:
     image: postgres
     environment:
       POSTGRES_PASSWORD: exemplepassword
-      POSTGRES_DB: mon_api_db
+      POSTGRES_USER: db_username
     volumes:
       - db_data:/var/lib/postgresql/data
 
