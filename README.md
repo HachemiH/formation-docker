@@ -4,4 +4,4 @@ Pour entrer en mode interactif dans un conteneur il faut utiliser la commande `d
 
 ![](./assets/shell.png)
 
-Une fois que nous sommes entrés dans le shell du conteneur, il n'y a plus qu'à exécuter la commande `Hello World`.
+Une fois que nous sommes entrés dans le shell du conteneur, il n'y a plus qu'à exécuter la commande `echo Hello World`.
