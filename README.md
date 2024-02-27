@@ -1,9 +1,5 @@
-# 6. Démarrer un conteneur de l'image `nginx`.
+# 7. Vérifier que le conteneur tourne.
 
-Pour démarrer un conteneur de l'image `nginx`, il suffit de cliquer sur bouton de démarrage.
+Pour vérifier que le conteneur tourne, il suffit de se rendre dans l'onglet des conteneurs, et de vérifier l'état du conteneur.
 
 ![](./assets/dd.png)
-
-Et d'appuyer sur le bouton `run` sur la pop-up qui s'affiche.
-
-![](./assets/dd-2.png)
