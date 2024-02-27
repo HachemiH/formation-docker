@@ -1,5 +1,5 @@
-# 9. Consulter les logs du conteneur `nginx`.
+# 10. Consulter l'onglet concernant l'utilisation des ressources.
 
-Pour consulter les logs du conteneur, il suffit de se rendre dans l'onglet `Logs` du conteneur.
+Pour consulter l'onglet concernant l'utilisation des ressources, il suffit de se rendre sur l'onglet `Stats`.
 
 ![](./assets/dd.png)
