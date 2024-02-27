@@ -1,5 +1,13 @@
-# 13. Afficher des informations détaillées sur le conteneur nginx.
+# 14. Supprimer l'image nginx proprement.
 
-Pour afficher les informations détaillées d'un conteneur, il faut utiliser la commande `docker inspect` suivi du nom ou de l'ID du conteneur.
+Si vous tentez de supprimer l'image `nginx` avec la commande `docker rmi nginx`, un message d'erreur s'affichera.
 
 ![](./assets/shell.png)
+
+Pour régler l'erreur, il suffit d'éteindre le conteneur et le supprimer :
+
+![](./assets/shell-2.png)
+
+Et réexécuter la commande de suppression :
+
+![](./assets/shell-3.png)
