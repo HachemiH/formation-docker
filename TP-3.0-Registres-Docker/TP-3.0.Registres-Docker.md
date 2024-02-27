@@ -1,5 +1,9 @@
 # TP sur les Conteneurs et les Images Docker
 
+Ce TP reprend les notions du module 3.0 sur les Conteneurs et les images. Il est divisé en 2 parties. Dans la première partie, vous n'utilisez pas Docker Desktop.
+
+# Partie 1 (Sans Docker Desktop)
+
 1. Créer un compte sur DockerHub.
 2. Chercher l'image nommée `nginx` sur DockerHub.
 3. Récupérer l'image sur votre machine.
@@ -18,7 +22,7 @@
     2. Si cela ne fonctionne pas, pourquoi ?
 15. Vérifier la suppression de l'image.
 
-# TP sur les Conteneurs et les Images Docker (Docker Desktop)
+# Partie 2 (En utilisant Docker Desktop)
 
 Ce TP reprend sensiblement les mêmes opérations que le TP précédent, cependant, dans ce TP, **vous devez exécuter toutes les actions avec Docker Desktop**.
 
@@ -26,14 +30,13 @@ Ce TP reprend sensiblement les mêmes opérations que le TP précédent, cependa
 2. Chercher l'image nommée `nginx`.
 3. Récupérer l'image sur votre machine.
 4. Consulter la liste de tous les conteneurs en cours d'exécution.
-5. Démarrer un conteneur de l'image `nginx` en suivant les recommandations de l'image.
-6. Vérifier que le conteneur tourne.
-7. Consulter la liste des images.
+5. Consulter la liste des images.
+6. Démarrer un conteneur de l'image `nginx`.
+7. Vérifier que le conteneur tourne.
 8. Exécuter la commande `echo Hello World` dans le conteneur.
 9. Consulter les logs du conteneur `nginx`.
 10. Consulter l'onglet concernant l'utilisation des ressources.
 11. Consulter les informations détaillées du conteneur.
 12. Supprimer l'image `nginx` **proprement** :
-    1. Si cela fonctionne, quel est le retour de la commande ?
+    1. Si cela fonctionne, quel est le retour ?
     2. Si cela ne fonctionne pas, pourquoi ?
-13. Vérifier la suppression de l'image `nginx`.
