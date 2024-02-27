@@ -12,5 +12,5 @@ Cette API utilise le port 3000 et nécessite un environnement `node` afin de s'e
    1. L'image de base est `node:hydrogen-slim`.
    2. Le DockerFile doit contenir une commande `npm i`.
    3. Le DockerFile doit contenir une commande d'exécution de l'API (`npm run start`).
-   4. Le DockerFile doit exposé le port de l'application.
+   4. Le DockerFile doit exposer le port de l'application.
 3. Créer un fichier `.dockerignore` pour alléger l'image de l'API, ce fichier doit lister les fichiers non essentiels au bon fonctionnement de l'API.
