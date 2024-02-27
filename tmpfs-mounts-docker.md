@@ -8,7 +8,7 @@ Les tmpfs mounts permettent de monter un système de fichiers en mémoire vive (
 - **Protection des Données** : Les données stockées dans un tmpfs mount sont volatiles et sont effacées automatiquement à l'arrêt du conteneur, offrant une couche supplémentaire de protection pour les données temporaires sensibles.
 - **Réduction de l'Usure du Disque** : En évitant les écritures répétées sur le disque, les tmpfs mounts peuvent contribuer à prolonger la durée de vie des supports de stockage, en particulier pour les disques SSD.
 
-## 5.4.3 Création et Utilisation
+## 5.4.2 Création et Utilisation
 
 Pour créer un tmpfs mount lors du démarrage d'un conteneur Docker, utilisez l'option `--tmpfs` dans votre commande `docker run`. Par exemple :
 
@@ -18,7 +18,7 @@ docker run -d --name mon_conteneur_temp --tmpfs /app/temp:rw,size=100m mon_image
 
 - **`--tmpfs /app/temp:rw,size=100m`** : Crée un tmpfs mount à l'emplacement `/app/temp` dans le conteneur avec des droits de lecture-écriture (`rw`) et une taille maximale de 100 mégaoctets (`size=100m`).
 
-## 5.4.4 Bonnes Pratiques
+## 5.4.3 Bonnes Pratiques
 
 - **Surveillance de la RAM** : Surveillez l'utilisation de la mémoire de votre système pour éviter d'affecter négativement les performances globales du système.
 - **Utilisation judicieuse** : Réservez l'utilisation des tmpfs mounts pour les cas où la rapidité d'accès en mémoire et la protection des données sont cruciales.
