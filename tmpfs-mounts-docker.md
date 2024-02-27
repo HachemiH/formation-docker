@@ -8,13 +8,6 @@ Les tmpfs mounts permettent de monter un système de fichiers en mémoire vive (
 - **Protection des Données** : Les données stockées dans un tmpfs mount sont volatiles et sont effacées automatiquement à l'arrêt du conteneur, offrant une couche supplémentaire de protection pour les données temporaires sensibles.
 - **Réduction de l'Usure du Disque** : En évitant les écritures répétées sur le disque, les tmpfs mounts peuvent contribuer à prolonger la durée de vie des supports de stockage, en particulier pour les disques SSD.
 
-## 5.4.2 Conditions d'Utilisation
-
-L'utilisation des tmpfs mounts est particulièrement recommandée dans les cas suivants :
-
-- **Disponibilité de RAM suffisante** : Assurez-vous que votre système dispose de suffisamment de mémoire vive pour supporter le stockage des données en tmpfs sans compromettre les performances des autres applications.
-- **Données Temporaires** : Idéal pour les données qui ne nécessitent pas de persistance à long terme, comme les fichiers temporaires d'une application ou les caches.
-
 ## 5.4.3 Création et Utilisation
 
 Pour créer un tmpfs mount lors du démarrage d'un conteneur Docker, utilisez l'option `--tmpfs` dans votre commande `docker run`. Par exemple :
@@ -29,14 +22,9 @@ docker run -d --name mon_conteneur_temp --tmpfs /app/temp:rw,size=100m mon_image
 
 - **Surveillance de la RAM** : Surveillez l'utilisation de la mémoire de votre système pour éviter d'affecter négativement les performances globales du système.
 - **Utilisation judicieuse** : Réservez l'utilisation des tmpfs mounts pour les cas où la rapidité d'accès en mémoire et la protection des données sont cruciales.
+- **Sécurité** : Bien que les données dans un tmpfs mount soient effacées à l'arrêt du conteneur, assurez-vous de ne pas stocker de données sensibles sans les protections appropriées.
 
 Les tmpfs mounts offrent une solution performante et sécurisée pour le stockage temporaire de données dans vos conteneurs Docker. En les utilisant judicieusement, vous pouvez optimiser les performances de vos applications tout en protégeant les données sensibles.
-
-## 5.4.3 Bonnes Pratiques pour l'Utilisation des Tmpfs Mounts
-
-- **Gestion de la Taille** : Soyez attentif à la taille allouée à vos tmpfs mounts, surtout sur des systèmes avec une quantité limitée de RAM.
-- **Utilisation Judicieuse** : Réservez l'utilisation des tmpfs mounts pour des données réellement temporaires et qui bénéficient d'un accès rapide en mémoire.
-- **Sécurité** : Bien que les données dans un tmpfs mount soient effacées à l'arrêt du conteneur, assurez-vous de ne pas stocker de données sensibles sans les protections appropriées.
 
 ## 5.4.4 Exemples Pratiques
 
