@@ -1,9 +1,5 @@
-# 8. Exécuter la commande `echo Hello World` dans le conteneur.
+# 9. Consulter les logs du conteneur `nginx`.
 
-Pour exécuter une commande dans un conteneur, il suffit de cliquer sur le conteneur.
+Pour consulter les logs du conteneur, il suffit de se rendre dans l'onglet `Logs` du conteneur.
 
 ![](./assets/dd.png)
-
-Puis de se rendre dans l'onglet `Exec` et de taper la commande `echo Hello World` dans le shell.
-
-![](./assets/dd-2.png)
