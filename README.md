@@ -1,5 +1,9 @@
-# 5. Consulter la liste des images.
+# 6. Démarrer un conteneur de l'image `nginx`.
 
-Pour voir toutes les images de la machine, il suffit de se rendre dans l'onglet dédié.
+Pour démarrer un conteneur de l'image `nginx`, il suffit de cliquer sur bouton de démarrage.
 
 ![](./assets/dd.png)
+
+Et d'appuyer sur le bouton `run` sur la pop-up qui s'affiche.
+
+![](./assets/dd-2.png)
