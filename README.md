@@ -1,5 +1,9 @@
-# 7. Vérifier que le conteneur tourne.
+# 8. Exécuter la commande `echo Hello World` dans le conteneur.
 
-Pour vérifier que le conteneur tourne, il suffit de se rendre dans l'onglet des conteneurs, et de vérifier l'état du conteneur.
+Pour exécuter une commande dans un conteneur, il suffit de cliquer sur le conteneur.
 
 ![](./assets/dd.png)
+
+Puis de se rendre dans l'onglet `Exec` et de taper la commande `echo Hello World` dans le shell.
+
+![](./assets/dd-2.png)
