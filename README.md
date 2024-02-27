@@ -1,5 +1,5 @@
-# 10. Consulter l'onglet concernant l'utilisation des ressources.
+# 11. Consulter les informations détaillées du conteneur.
 
-Pour consulter l'onglet concernant l'utilisation des ressources, il suffit de se rendre sur l'onglet `Stats`.
+Pour consulter les informations détaillées du conteneur, il suffit de se rendre sur l'onglet `Inspect`.
 
 ![](./assets/dd.png)
