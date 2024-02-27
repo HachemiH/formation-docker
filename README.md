@@ -1,5 +1,5 @@
-# 8. Lister toutes les images Docker
+# 9. Exécuter la commande echo Hello World dans le conteneur sans entrer en mode interactif.
 
-Pour lister toutes les images Docker, il suffisait d'exécuter la commande `docker image ls` dans votre shell :
+Pour exécuter une commande dans un conteneur, il faut utiliser la commande docker exec suivie du nom ou de l'ID du conteneur, et enfin la commande à exécuter.
 
 ![](./assets/shell.png)
