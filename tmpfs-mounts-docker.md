@@ -31,15 +31,6 @@ docker run -d --name mon_conteneur_temp --tmpfs /app/temp:rw,size=100m mon_image
 - **Utilisation judicieuse** : Réservez l'utilisation des tmpfs mounts pour les cas où la rapidité d'accès en mémoire et la protection des données sont cruciales.
 
 Les tmpfs mounts offrent une solution performante et sécurisée pour le stockage temporaire de données dans vos conteneurs Docker. En les utilisant judicieusement, vous pouvez optimiser les performances de vos applications tout en protégeant les données sensibles.
-## 5.4.2 Comment utiliser les Tmpfs Mounts ?
-
-Pour créer un tmpfs mount lors du lancement d'un conteneur Docker, vous pouvez utiliser l'option `--tmpfs` dans votre commande `docker run`. Voici un exemple simple :
-
-```bash
-docker run -d --name mon_conteneur_temp --tmpfs /app/temp:rw,size=100m mon_image
-```
-
-- **`--tmpfs /app/temp:rw,size=100m`** : Cette option crée un tmpfs mount à l'emplacement `/app/temp` dans le conteneur. Le montage est en mode lecture-écriture (`rw`) avec une taille maximale de 100 mégaoctets (`size=100m`).
 
 ## 5.4.3 Bonnes Pratiques pour l'Utilisation des Tmpfs Mounts
 
