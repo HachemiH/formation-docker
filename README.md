@@ -1,5 +1,5 @@
-# 4. Consulter la liste de tous les conteneurs en cours d'exécution.
+# 5. Consulter la liste des images.
 
-Pour voir tous les conteneurs en cours d'exécution sur la machine, il suffit de cliquer sur l'onglet dédié.
+Pour voir toutes les images de la machine, il suffit de se rendre dans l'onglet dédié.
 
 ![](./assets/dd.png)
