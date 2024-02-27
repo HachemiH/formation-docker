@@ -1,13 +1,5 @@
-# 2. Chercher l'image nommée nginx.
+# 3. Récupérer l'image sur votre machine.
 
-Pour chercher l'image `nginx` sur Docker Desktop, il suffit de taper le nom de l'image dans la barre de recherche.
-
-![](./assets/dd-0.png)
-
-Puis de séléctionner l'image `nginx`.
+Pour récupérer l'image sur la machine, il suffit de cliquer sur le bouton `pull` de l'image.
 
 ![](./assets/dd.png)
-
-Pour arriver sur la page de l'image.
-
-![](./assets/dd-2.png)
