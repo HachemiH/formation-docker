@@ -16,7 +16,10 @@ Pour créer un tmpfs mount lors du démarrage d'un conteneur Docker, utilisez l'
 docker run -d --name mon_conteneur_temp --tmpfs /app/temp:rw,size=100m mon_image
 ```
 
-- **`--tmpfs /app/temp:rw,size=100m`** : Crée un tmpfs mount à l'emplacement `/app/temp` dans le conteneur avec des droits de lecture-écriture (`rw`) et une taille maximale de 100 mégaoctets (`size=100m`).
+- **`--tmpfs`** : Sert à spécifier qu'il faut créer un tmpfs mount.
+- **`/app/temp`**: Sert à spécifier l'emplacement du tmpfs (`/app/temp`) dans le conteneur.
+- **`:rw`** : Spécifie les droits sur le tmpfs mount (`rw`, pour `read` et `write`), donc les droits sont : la lecture et l'écriture dans le tmpfs mount.
+- **`size=100m`** : Spécifie la taille allouée au tmpfs mount (`100 Mo`)
 
 ## 5.4.3 Bonnes Pratiques
 
