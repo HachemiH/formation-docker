@@ -34,3 +34,7 @@ La surveillance et le dépannage des conteneurs Docker sont cruciaux pour le mai
 - **Supprimer et Recréer un Conteneur Défaillant :**
   - Commande : `docker rm [CONTENEUR]`
     - Si un conteneur est corrompu ou ne fonctionne plus correctement, il peut être nécessaire de le supprimer et de le recréer.
+
+## Travail pratique
+
+Pour vous exercer sur les notions abordées dans ce module, un TP reprenant ces notions est disponible <a href='./TP-3.0-Registres-Docker/README.md'>ici</a>
