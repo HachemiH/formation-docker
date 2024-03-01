@@ -1,9 +1,9 @@
 # Formation Docker
 
 ## Module 1.0 : Introduction à Docker
-### [1.1. Quelle est la différence entre `Bare Metal`, `Virtual Machine` et `Container` ?](./bare-metal-virtual-machine-container.md)
-### [1.2. Qu'est-ce que Docker ?](./intro-docker.md)
-### [1.3. Pourquoi utiliser Docker ? Quels problèmes résout-il et quels sont ses avantages ?](./pourquoi-docker.md)
+### [1.1. Quelle est la différence entre `Bare Metal`, `Virtual Machine` et `Container` ?](./module-1-introduction-docker/1.1-bare-metal-virtual-machine-container.md)
+### [1.2. Qu'est-ce que Docker ?](./module-1-introduction-docker/1.2-intro-docker.md)
+### [1.3. Pourquoi utiliser Docker ? Quels problèmes résout-il et quels sont ses avantages ?](./module-1-introduction-docker/1.3-pourquoi-docker.md)
 
 ---
 
