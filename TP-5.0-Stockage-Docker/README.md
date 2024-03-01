@@ -18,3 +18,19 @@ Avant de vous lancer dans ce TP, veillez à récupérer l'image `postgres` sur v
 9. Éteindre les conteneurs `my-database` et `my-nginx`.
 10. Supprimer les conteneurs `my-database` et `my-nginx`.
 11. Supprimer le volume `pgdata`.
+
+# Partie 2 : Sur un VPS
+
+1. Créer un volume nommé `pgdata`.
+2. Démarrer un conteneur nommé `my-database` de l'image `postgres`.
+   1. Lier le volume `pgdata`, le chemin d'accès dans le conteneur doit être `/var/lib/postgresql/data`.
+   2. Ajouter les variables d'environnement nécessaire au lancement du conteneur.
+3. Vérifier que le volume `pgdata` est bien utilisé par le conteneur.
+4. Créer un dossier `my-datas` sur votre disque.
+5. Démarrer un conteneur nommé `my-nginx` de l'image `nginx`.
+   1. Créer un bindmount du dossier `my-datas` sur votre disque au chemin `/app/data` du conteneur.
+6. Créer un fichier `test.md` dans le dossier `my-datas` sur votre disque.
+7. Vérifier que le dossier `/app/data` contient le fichier `test.md`.
+8. Éteindre les conteneurs `my-database` et `my-nginx`.
+9.  Supprimer les conteneurs `my-database` et `my-nginx`.
+10. Supprimer le volume `pgdata`.
