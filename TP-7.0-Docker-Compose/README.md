@@ -8,6 +8,8 @@ Ce TP est à réaliser sur votre machine en local.
       1. Définir les variables d'environnement relatives à PostgreSQL.
       2. Définir le port du conteneur.
       3. Définir le volume utilisé par le conteneur.
-      4. Définir le réseau auquel sera relié le conteneur.
-   2. Créer un volume `pgdata`. 
-   3. Créer un réseau `app-network`.
+      4. Définir le réseau auquel sera relié le conteneur (`app-network`).
+   2. Démarrer un conteneur de l'image `mecopi/nest-back-project`.
+      1. Connecter le conteneur au réseau `app-network`.
+   3. Créer un volume `pgdata`. 
+   4. Créer un réseau `app-network`.
