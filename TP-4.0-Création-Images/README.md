@@ -17,3 +17,7 @@ Cette API utilise le port 3000 et nécessite un environnement `node` afin de s'e
 4. Lancer le build de l'image avec le tag `nest-api:1.0`.
 5. Démarrer l'image `nest-api:1.0` dans un conteneur.
 6. Afficher les logs du conteneur.
+7. Éteindre le conteneur.
+8. Supprimer le conteneur.
+9. Taguer l'image `nest-api:1.0` pour permettre un envoi de l'image sur DockerHub.
+10. Envoyer l'image sur DockerHub.
