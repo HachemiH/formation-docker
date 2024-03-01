@@ -36,11 +36,11 @@
 ---
 
 ## Module 5.0 : Stockage dans Docker
-### [5.1 Introduction au Stockage dans Docker](./introduction-stockage-docker.md)
-### [5.2 Les Volumes Docker](./volumes-docker.md)
-### [5.3 Les Bind Mounts](./bind-mounts-docker.md)
-### [5.4 Les Tmpfs Mounts](./tmpfs-mounts-docker.md)
-### [5.5 Stockage et Sécurité](./stockage-securite-docker.md)
+### [5.1 Introduction au Stockage dans Docker](./module-5-stockage-dans-docker/5.1-introduction-stockage-docker.md)
+### [5.2 Les Volumes Docker](./module-5-stockage-dans-docker/5.2-volumes-docker.md)
+### [5.3 Les Bind Mounts](./module-5-stockage-dans-docker/5.3-bind-mounts-docker.md)
+### [5.4 Les Tmpfs Mounts](./module-5-stockage-dans-docker/5.4-tmpfs-mounts-docker.md)
+### [5.5 Stockage et Sécurité](./module-5-stockage-dans-docker/5.5-stockage-securite-docker.md)
 
 ---
 
