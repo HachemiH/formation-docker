@@ -9,3 +9,6 @@ Avant de vous lancer dans ce TP, veillez à récupérer l'image `postgres` sur v
    1. Lié le volume `pgdata`, le chemin d'accès dans le conteneur doit être `/var/lib/postgresql/data`.
    2. Ajouter les variables d'environnement nécessaire au lancement du conteneur.
 3. Vérifier que le volume `pgdata` est bien utilisé par le conteneur via l'onglet des volumes.
+4. Vérifier que le volume `pgdata` est bien utilisé par le conteneur via les onglets du conteneur.
+5. Éteidre le conteneur `my-database`.
+6. Supprimer le conteneur `my-database`.
