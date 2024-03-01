@@ -8,9 +8,9 @@
 ---
 
 ## Module 2.0 : Installation de Docker
-### [2.1. Comment installer Docker sur Windows ?](./comment-installer-docker-windows10.md)
-### [2.2. Comment installer Docker sur MacOS ?](./comment-installer-docker-mac.md)
-### [2.3. Comment installer Docker sur Linux ?](./comment-installer-docker-linux.md)
+### [2.1. Comment installer Docker sur Windows ?](./module-2-installation-docker/2.1-comment-installer-docker-windows10.md)
+### [2.2. Comment installer Docker sur MacOS ?](./module-2-installation-docker/2.2-comment-installer-docker-mac.md)
+### [2.3. Comment installer Docker sur Linux ?](./module-2-installation-docker/2.3-comment-installer-docker-linux.md)
 
 ---
 
