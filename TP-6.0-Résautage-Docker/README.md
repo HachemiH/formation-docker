@@ -1,0 +1,5 @@
+# TP 6 : Résautage dans Docker
+
+1. Créer un réseau sur le driver local nommé `back-end-network`.
+2. Lister tous les résaux Docker.
+3. Consulter les informations détaillées du réseau `back-end-network`.
