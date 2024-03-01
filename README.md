@@ -15,12 +15,12 @@
 ---
 
 ## Module 3.0 : Fondamentaux des Conteneurs et des Images
-### [3.1. Quelle est la différence entre un conteneur Docker et une image Docker ?](./conteneur-vs-image-docker.md)
-### [3.2. Registres Docker et Docker Hub](./docker-hub.md)
-### [3.3. Comment gérer les images Docker ?](./comment-gerer-les-images-docker.md)
-### [3.4. Comment gérer les conteneurs Docker ?](./comment-gerer-les-conteneurs-docker.md)
-### [3.5. Comment exécuter des commandes à l'intérieur d'un conteneur Docker ?](./executer-commandes-dans-conteneur-docker.md)
-### [3.6. Comment surveiller et dépanner un conteneur Docker ?](./monitorer-depanner-conteneurs-docker.md)
+### [3.1. Quelle est la différence entre un conteneur Docker et une image Docker ?](./module-3-conteneurs-et-images-docker/3.1-conteneur-vs-image-docker.md)
+### [3.2. Registres Docker et Docker Hub](./module-3-conteneurs-et-images-docker/3.2-docker-hub.md)
+### [3.3. Comment gérer les images Docker ?](./module-3-conteneurs-et-images-docker/3.3-comment-gerer-les-images-docker.md)
+### [3.4. Comment gérer les conteneurs Docker ?](./module-3-conteneurs-et-images-docker/3.4-comment-gerer-les-conteneurs-docker.md)
+### [3.5. Comment exécuter des commandes à l'intérieur d'un conteneur Docker ?](./module-3-conteneurs-et-images-docker/3.5-executer-commandes-dans-conteneur-docker.md)
+### [3.6. Comment surveiller et dépanner un conteneur Docker ?](./module-3-conteneurs-et-images-docker/3.6-monitorer-depanner-conteneurs-docker.md)
 
 ---
 
