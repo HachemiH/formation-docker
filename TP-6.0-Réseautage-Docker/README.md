@@ -14,3 +14,4 @@ Ce TP est à réaliser sur le VPS qui vous a été fourni.
 8. Supprimer le réseau `back-end-network`.
    1. Si cela fonctionne, quel est le retour ?
    2. Si cela ne fonctionne pas, pourquoi ?
+9. Vérifier la suppresion du réseau `back-end-network`.
