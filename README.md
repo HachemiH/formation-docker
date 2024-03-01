@@ -21,6 +21,7 @@
 ### [3.4. Comment gérer les conteneurs Docker ?](./module-3-conteneurs-et-images-docker/3.4-comment-gerer-les-conteneurs-docker.md)
 ### [3.5. Comment exécuter des commandes à l'intérieur d'un conteneur Docker ?](./module-3-conteneurs-et-images-docker/3.5-executer-commandes-dans-conteneur-docker.md)
 ### [3.6. Comment surveiller et dépanner un conteneur Docker ?](./module-3-conteneurs-et-images-docker/3.6-monitorer-depanner-conteneurs-docker.md)
+### [3.7. Travail Pratique](./module-3-conteneurs-et-images-docker/3.7-Travail-Pratique.md)
 
 ---
 
@@ -32,6 +33,7 @@
 ### [4.5. Optimisation des Images Docker](./module-4-gestion-avancée-des-images/4.5-optimisation-images-docker.md)
 ### [4.6. Gestion des Tags et Versions dans les Images Docker](./module-4-gestion-avancée-des-images/4.6-gestion-tags-versions-images-docker.md)
 ### [4.7. Partage et Distribution d'Images Docker](./module-4-gestion-avancée-des-images/4.7-partage-distributions-images-docker.md)
+### [4.8. Travail Pratique](./module-4-gestion-avancée-des-images/4.8-Travail-Pratique.md)
 
 ---
 
@@ -41,6 +43,7 @@
 ### [5.3 Les Bind Mounts](./module-5-stockage-dans-docker/5.3-bind-mounts-docker.md)
 ### [5.4 Les Tmpfs Mounts](./module-5-stockage-dans-docker/5.4-tmpfs-mounts-docker.md)
 ### [5.5 Stockage et Sécurité](./module-5-stockage-dans-docker/5.5-stockage-securite-docker.md)
+### [5.6. Travail Pratique](./module-5-stockage-dans-docker/5.6-Travail-Pratique.md)
 
 ---
 
@@ -48,9 +51,11 @@
 ### [6.1. Quels sont les concepts de base du réseau dans Docker ?](./module-6-réseautage-docker/6.1-introduction-reseaux-docker.md)
 ### [6.2 Création et Gestion des Réseaux Docker](./module-6-réseautage-docker/6.2-creation-gestion-reseaux-docker.md)
 ### [6.3 Connexion des Conteneurs aux Réseaux Docker](./module-6-réseautage-docker/6.3-connexion-conteneurs-reseaux-docker.md)
+### [6.4. Travail Pratique](./module-6-réseautage-docker/6.4-Travail-Pratique.md)
 
 ---
 
 ## Module 7.0 : Docker Compose et Orchestration
 ### [7.1. Qu'est-ce que Docker Compose et comment l'utiliser ?](./module-7-docker-compose/7.1-introduction-docker-compose.md)
 ### [7.2 Comment démarrer et arrêter des services avec Docker Compose ?](./module-7-docker-compose/7.2-commandes-docker-compose.md)
+### [7.3. Travail Pratique](./module-7-docker-compose/7.3-Travail-Pratique.md)
