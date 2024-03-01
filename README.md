@@ -25,13 +25,13 @@
 ---
 
 ## Module 4.0 : Gestion Avancée des Images
-### [4.1 Prérequis pour la Création d'Images Docker Personnalisées](./prerequis-creation-images-docker.md)
-### [4.2 Pourquoi construire une image Docker personnalisée ?](./pourquoi-construire-une-image-docker-personnalisee.md)
-### [4.3. Introduction au Dockerfile](./introduction-dockerfile.md)
-### [4.4. Construction d'une Image Docker à partir d'un Dockerfile](./construction-image-personnalisee-docker.md)
-### [4.5. Optimisation des Images Docker](./optimisation-images-docker.md)
-### [4.6. Gestion des Tags et Versions dans les Images Docker](./gestion-tags-versions-images-docker.md)
-### [4.7. Partage et Distribution d'Images Docker](./partage-distributions-images-docker.md)
+### [4.1 Prérequis pour la Création d'Images Docker Personnalisées](./module-4-gestion-avancée-des-images/4.1-prerequis-creation-images-docker.md)
+### [4.2 Pourquoi construire une image Docker personnalisée ?](./module-4-gestion-avancée-des-images/4.2-pourquoi-construire-une-image-docker-personnalisee.md)
+### [4.3. Introduction au Dockerfile](./module-4-gestion-avancée-des-images/4.3-introduction-dockerfile.md)
+### [4.4. Construction d'une Image Docker à partir d'un Dockerfile](./module-4-gestion-avancée-des-images/4.4-construction-image-personnalisee-docker.md)
+### [4.5. Optimisation des Images Docker](./module-4-gestion-avancée-des-images/4.5-optimisation-images-docker.md)
+### [4.6. Gestion des Tags et Versions dans les Images Docker](./module-4-gestion-avancée-des-images/4.6-gestion-tags-versions-images-docker.md)
+### [4.7. Partage et Distribution d'Images Docker](./module-4-gestion-avancée-des-images/4.7-partage-distributions-images-docker.md)
 
 ---
 
