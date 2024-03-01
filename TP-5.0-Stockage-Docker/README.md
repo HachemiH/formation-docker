@@ -15,3 +15,6 @@ Avant de vous lancer dans ce TP, veillez à récupérer l'image `postgres` sur v
    1. Líer le dossier `my-datas` sur votre disque au chemin `/app/data` du conteneur.
 7. Créer un fichier `test.md` dans le dossier `my-datas` sur votre disque.
 8. Vérifier que le dossier `/app/data` contient le fichier `test.md` via l'onglet du conteneur dans Docker Desktop.
+9. Éteindre les conteneurs `my-database` et `my-nginx`.
+10. Supprimer les conteneurs `my-database` et `my-nginx`.
+11. Supprimer le volume `pgdata`.
