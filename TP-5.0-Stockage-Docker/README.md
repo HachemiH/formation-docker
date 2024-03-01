@@ -13,3 +13,5 @@ Avant de vous lancer dans ce TP, veillez à récupérer l'image `postgres` sur v
 5. Créer un dossier `my-datas` sur votre disque.
 6. Créer un conteneur nommé `my-nginx` de l'image `nginx`.
    1. Líer le dossier `my-datas` sur votre disque au chemin `/app/data` du conteneur.
+7. Créer un fichier `test.md` dans le dossier `my-datas` sur votre disque.
+8. Vérifier que le dossier `/app/data` contient le fichier `test.md` via l'onglet du conteneur dans Docker Desktop.
