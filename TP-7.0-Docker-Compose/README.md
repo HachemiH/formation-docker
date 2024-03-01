@@ -3,7 +3,7 @@
 Ce TP est à réaliser sur votre machine en local.
 
 1. Créer un dossier `back-end` sur votre disque.
-2. Créer un fichier `docker-compose.yml`, ce fichier doit :
+2. Créer un fichier `docker-compose.yml` dans le dossier `back-end`, ce fichier doit :
    1. Démarrer un conteneur `postgres` :
       1. Définir les variables d'environnement relatives à PostgreSQL.
       2. Définir le port du conteneur.
