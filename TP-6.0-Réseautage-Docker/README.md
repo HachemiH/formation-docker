@@ -1,4 +1,4 @@
-# TP 6 : Résautage dans Docker
+# TP 6 : Réseautage dans Docker
 
 Ce TP est à réaliser sur le VPS qui vous a été fourni.
 
