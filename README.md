@@ -45,9 +45,9 @@
 ---
 
 ## Module 6.0 : Réseautage dans Docker
-### [6.1. Quels sont les concepts de base du réseau dans Docker ?](./introduction-reseaux-docker.md)
-### [6.2 Création et Gestion des Réseaux Docker](./creation-gestion-reseaux-docker.md)
-### [6.3 Connexion des Conteneurs aux Réseaux Docker](./connexion-conteneurs-reseaux-docker.md)
+### [6.1. Quels sont les concepts de base du réseau dans Docker ?](./module-6-réseautage-docker/6.1-introduction-reseaux-docker.md)
+### [6.2 Création et Gestion des Réseaux Docker](./module-6-réseautage-docker/6.2-creation-gestion-reseaux-docker.md)
+### [6.3 Connexion des Conteneurs aux Réseaux Docker](./module-6-réseautage-docker/6.3-connexion-conteneurs-reseaux-docker.md)
 
 ---
 
