@@ -11,3 +11,6 @@ Ce TP est à réaliser sur le VPS qui vous a été fourni.
 4. Démarrer un conteneur de l'image `postgres` en le connectant au réseau `back-end-network`.
 5. Consulter les informations détaillées du conteneur `postgres`.
    1. Quelles observations pouvez-vous faire ?
+6. Supprimer le réseau `back-end-network`.
+   1. Si cela fonctionne, quel est le retour ?
+   2. Si cela ne fonctionne pas, pourquoi ?
