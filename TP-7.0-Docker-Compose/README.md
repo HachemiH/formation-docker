@@ -13,3 +13,5 @@ Ce TP est à réaliser sur votre machine en local.
       1. Connecter le conteneur au réseau `back-network`.
    3. Créer un volume `pgdata`. 
    4. Créer un réseau `back-network`.
+3. Exécuter le fichier `docker-compose`.
+4. Vérifier l'état des conteneurs.
