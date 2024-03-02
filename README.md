@@ -1,5 +1,5 @@
-# 1. Créer un réseau (sur le driver local) nommé ``production-network``.
+# 2. Vérifier que le réseau ``production-network`` à bien été crée.
 
-Pour créer un réseau Docker, il suffit de taper la commande `docker network create` suivi du nom du réseau (et une précision du driver sur lequel le réseau doit être crée, `bridge` est le driver par défaut).
+Pour vérifier que le réseau à bien été crée, il suffit de lister tous les réseaux Docker, à l'aide de la commande `docker network ls`.
 
 ![](./assets/cli.png)
