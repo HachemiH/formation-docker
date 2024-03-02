@@ -1,9 +1,6 @@
-# 11. Supprimer le volume `pgdata`.
+# 1. Créer un volume nommé `pgdata`.
 
-Pour supprimer le volume, il suffit de se rendre dans l'onglet des Volumes et de cliquer sur la corbeille du volume.
+Pour créer un volume avec Docker, il suffit de taper la commande `docker volume create` suivi du nom du volume, ici `pgdata`.
 
-![](./assets/dd.png)
-
-Une fois fait, vous n'avez plus de volume
-
-![](./assets/dd-2.png)
+![](./assets/cli.png)
+![](./assets/cli-2.png)
