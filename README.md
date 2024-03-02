@@ -1,9 +1,5 @@
-# 8. Vérifier que le dossier `/app/data` contient le fichier `test.md`.
+# 11. Supprimer le volume `pgdata`.
 
-Pour vérifier que le fichier `test.md` existe bien dans le dossier `/app/data`, il suffit d'exécuter la commande `docker exec -it` suivi du nom du conteneur ainsi que le shell à utiliser. 
+Pour supprimer un volume, il suffit d'exécuter la commande `docker volume rm` suivi du nom du volume.
 
 ![](./assets/cli.png)
-
-Puis de naviguer dans le dossier `/app/data` et de lister les fichiers à l'aide de la commande `ls`.
-
-Ici, on voit que le fichier `test.md` existe bien dans le dossier `/app/data` du conteneur.
