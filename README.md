@@ -1,7 +1,10 @@
-# 7. Consulter les informations détaillées du conteneur `postgres`.
+# 8. Supprimer le réseau `production-network`.
 
-Pour consulter les informations du conteneur il suffit d'exécuter la commande `docker inspect` suivi du nom ou de l'ID du conteneur.
+Pour supprimer un réseau Docker, il suffit d'exécuter la commande `docker network rm` suivi du nom ou de l'ID du réseau.
 
 ![](./assets/cli.png)
 
-On peut voir dans la section `Networks` du conteneur qu'il est connecté au réseau `production-network`
+Cependant, sur cette image, on voit un message d'erreur car il semble que le réseau soit en cours d'utilisation.
+Il faut alors éteindre et supprimer les conteneurs utilisants le réseau, afin de pouvoir supprimer ce dernier.
+
+![](./assets/cli-2.png)
