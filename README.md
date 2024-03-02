@@ -1,5 +1,5 @@
-# 2. Vérifier que le réseau ``production-network`` à bien été crée.
+# 3. Consulter les informations détaillées du réseau ``production-network``.
 
-Pour vérifier que le réseau à bien été crée, il suffit de lister tous les réseaux Docker, à l'aide de la commande `docker network ls`.
+Pour consulter les informations détaillées d'un réseau Docker, il suffit de taper la commande `docker network inspect` suivi du nom ou de l'ID du réseau.
 
 ![](./assets/cli.png)
