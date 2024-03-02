@@ -1,5 +1,7 @@
-# 6. Démarrer un conteneur de l'image postgres en le connectant au réseau ``production-network``.
+# 7. Consulter les informations détaillées du conteneur `postgres`.
 
-Il suffit de rajouter le flag `network` suivi du nom du réseau pour connecter le conteneur au réseau.s
+Pour consulter les informations du conteneur il suffit d'exécuter la commande `docker inspect` suivi du nom ou de l'ID du conteneur.
 
 ![](./assets/cli.png)
+
+On peut voir dans la section `Networks` du conteneur qu'il est connecté au réseau `production-network`
