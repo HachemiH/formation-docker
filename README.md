@@ -1,10 +1,7 @@
-# 8. Supprimer le réseau `production-network`.
+# 9. Vérifier la suppression du réseau `production-network`. 
 
-Pour supprimer un réseau Docker, il suffit d'exécuter la commande `docker network rm` suivi du nom ou de l'ID du réseau.
+Pour vérifier la suppression du réseau, il suffit d'exécuter la commande `docker network ls`.
 
 ![](./assets/cli.png)
 
-Cependant, sur cette image, on voit un message d'erreur car il semble que le réseau soit en cours d'utilisation.
-Il faut alors éteindre et supprimer les conteneurs utilisants le réseau, afin de pouvoir supprimer ce dernier.
-
-![](./assets/cli-2.png)
+On peut voir que le réseau `production-network` n'existe plus.
