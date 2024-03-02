@@ -1,7 +1,3 @@
-# 4. Vérifier que le volume `pgdata` est bien utilisé par le conteneur via les onglets du conteneur.
-
-Pour vérifier que le volume est utilisé via le conteneur, il suffit :
-
-- De consulter l'onglet `Files` du conteneur.
+# 6. Démarrer un conteneur nommé `my-nginx` de l'image `nginx`.
 
 ![](./assets/dd.png)
