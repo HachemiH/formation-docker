@@ -1,5 +1,5 @@
-# 5. Consulter les informations détaillées du réseau ``production-network``.
+# 6. Démarrer un conteneur de l'image postgres en le connectant au réseau ``production-network``.
 
-En consultant de nouveau les informations détaillées du réseau, on se rends compte que la section `Containers` contient maintenant le conteneur `nginx`.
+Il suffit de rajouter le flag `network` suivi du nom du réseau pour connecter le conteneur au réseau.s
 
 ![](./assets/cli.png)
