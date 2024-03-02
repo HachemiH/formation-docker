@@ -1,6 +1,5 @@
-# 1. Créer un volume nommé `pgdata`.
+# 2. Lister tous les volumes Docker
 
-Pour créer un volume avec Docker, il suffit de taper la commande `docker volume create` suivi du nom du volume, ici `pgdata`.
+Pour lister les volumes Docker, il suffit de taper la commande `docker volume ls`.
 
 ![](./assets/cli.png)
-![](./assets/cli-2.png)
