@@ -1,10 +1,9 @@
-# 8. Vérifier que le dossier `/app/data` contient le fichier `test.md` via l'onglet du conteneur dans Docker Desktop.
+# 11. Supprimer le volume `pgdata`.
 
-En effet, on peut constater que le fichier `test.md` est aussi affiché dans la liste des fichiers du conteneur `my-nginx`.
-Nous venous de créer un bind-mount, comme on peut le constater.
+Pour supprimer le volume, il suffit de se rendre dans l'onglet des Volumes et de cliquer sur la corbeille du volume.
 
 ![](./assets/dd.png)
 
-Ou encore dans l'onglet `bind-mounts` :
+Une fois fait, vous n'avez plus de volume
 
 ![](./assets/dd-2.png)
