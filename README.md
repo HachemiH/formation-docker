@@ -1,15 +1,15 @@
-# 3. Démarrer un conteneur nommé `my-database` de l'image `postgres`.
+# 4. Vérifier que le volume `pgdata` est bien utilisé par le conteneur.
 
-Pour démarrer un conteneur `postgres` il suffit d'exécuter la commande `docker run`.
+Pour vérifier que le conteneur utilise bien le volume `pgdata`, il suffit d'éxecuter la commande `docker inspect` suivi du nom ou de l'ID du conteneur :
 
 ![](./assets/cli.png)
 
-- `docker run` : La commande Docker pour démarrer un conteneur.
-- `--name` : Définit le nom du conteneur.
-- `-e` : Définit une variable d'environnement (ici `POSTGRES_USER=demo`, `POSTGRES_PASSWORD=test`)
-- `-p` : Définit le port de l'hôte (ici `5432` vers le port `5432` du conteneur)
-- `-v` : Définit le volume utilisé par le conteneur.
-  - `pgdata` : Le nom du volume à utiliser
-  - `:` : Sert à définir le chemin d'accès dans le conteneur
-  - `/var/lib/postgresql/data` : Le chemin d'accès dans le conteneur.
-- `postgres` : L'image à partir de laquelle le conteneur doit démarrer.
+Et de chercher la section `Mounts` :
+
+![](./assets/cli-2.png)
+
+Ici, on voit que la section `Mounts` contient une entrée :
+
+- `Type: Volume` : Le type de mount est un Volume.
+- `Name: pgdata` : Le nom du Volume.
+- `Destination: /var/lib/postgresql/data` : Le chemin d'accès dans le conteneur.
