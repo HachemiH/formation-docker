@@ -1,5 +1,5 @@
-# 11. Afficher les logs du conteneur nginx.
+# 1. Créer un réseau (sur le driver local) nommé ``production-network``.
 
-Pour afficher les logs du conteneur nginx il suffit d'exécuter la commande `docker logs` suivi du nom ou de l'ID du conteneur.
+Pour créer un réseau Docker, il suffit de taper la commande `docker network create` suivi du nom du réseau (et une précision du driver sur lequel le réseau doit être crée, `bridge` est le driver par défaut).
 
-![](./assets/shell.png)
+![](./assets/cli.png)
