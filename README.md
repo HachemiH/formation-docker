@@ -1,7 +1,7 @@
-# 6. Démarrer l'image nest-api:1.0 dans un conteneur.
+# 8. Afficher les logs du conteneur.
 
-Pour démarrer un conteneur de l'API, il suffit d'exécuter la commande `docker run`.
+Pour afficher les logs du conteneur, il suffit de taper la commande `docker logs`, suivi du nom ou de l'ID du conteneur.
 
 ![](./assets/cli.png)
 
-- `-p 3000:3000` : Définit qu'une redirection du port `3000` de l'hôte est effectué vers le port `3000` du conteneur. 
+- `-f` :  Définit si nous souhaitons consulter activement les logs, si ce flag n'est pas présent, les logs s'affichent et vous reprenez la main sur le shell.
