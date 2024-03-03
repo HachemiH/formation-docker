@@ -1,14 +1,11 @@
-# 3. Créer un fichier ``.dockerignore`` pour alléger l'image de l'API, ce fichier doit lister les fichiers non essentiels au bon fonctionnement de l'API.
+# 4. Lancer le build de l'image avec le tag ``nest-api:1.0``.
 
-Voici le `.dockerignore` associé à l'application :
+Pour monter `build` l'image de l'application, il suffit d'exécuter la commande `docker build`, suivi du nom ainsi que du tag de l'image et enfin du chemin d'accès de cette dernière.
 
-```dockerignore
-dist/
-node_modules/
-.eslintrc.js
-.prettierrc
-```
+![](./assets/cli.png)
 
-- `dist/` : Exclue les fichiers transpilés de l'application
-- `node_modles/` : Exclue les dépendances de l'application
-- `.eslintrc.js`, `.prettierrc` : Exclue les fichiers assurant la qualité du code.
+- `docker build` : Permet de dire à Docker que nous voulons créer une image.
+- `-t` : Permet de spécifier le nom ainsi que le tag de l'image.
+  - `nest-api`: Le nom de l'image
+  - `:1.0` : Le tag de l'image
+- `app/` : Le chemin d'accès pour lancer le build (le répertoire dans lequel se trouve le DockerFile)
