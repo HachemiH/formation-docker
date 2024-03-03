@@ -1,4 +1,4 @@
-# 6. Démarrer l'image nest-api:1.0 dans un conteneur.
+# 6. Démarrer un conteneur de l'image ``nest-api:1.0``.
 
 Pour démarrer un conteneur de l'API, il suffit d'exécuter la commande `docker run`.
 
