@@ -1,20 +1,14 @@
-# 2. Écrire le ``DockerFile`` permettant de créer une image de cette API à la racine de l'application
+# 3. Créer un fichier ``.dockerignore`` pour alléger l'image de l'API, ce fichier doit lister les fichiers non essentiels au bon fonctionnement de l'API.
 
-Voici le Dockerfile associé à l'application :
+Voici le `.dockerignore` associé à l'application :
 
-```Dockerfile
-FROM node:hydrogen-slim
-COPY . .
-RUN npm i
-EXPOSE 3000
-CMD ["/bin/bash", "-c", "npm run start"]
+```dockerignore
+dist/
+node_modules/
+.eslintrc.js
+.prettierrc
 ```
 
-- `FROM` : Définit l'image de base, ici `node:hydrogen-slim`.
-- `COPY` : Copie les fichiers de l'image de l'hôte depuis le chemin vers le chemin dans les conteneurs qui démarreront de l'image.
-  - `.` : Le dossier dans lequel se trouve le `DockerFile`.
-  - ` .` : La racine des conteneurs
-- `RUN npm i` : Exécute la commande `npm install`
-- `EXPOSE 3000` : Expose le port `3000` (celui de NestJS par défaut) pour permettre la communication avec l'application qui sera conteneurisé.
-- `CMD ...` : Exécute une commande avec le shell `bash` de l'image de base
-  - `npm run start` : Éxecute la commande de démarrage de l'application
+- `dist/` : Exclue les fichiers transpilés de l'application
+- `node_modles/` : Exclue les dépendances de l'application
+- `.eslintrc.js`, `.prettierrc` : Exclue les fichiers assurant la qualité du code.
