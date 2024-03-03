@@ -1,7 +1,8 @@
-# 8. Afficher les logs du conteneur.
+# 11. Taguer l'image ``nest-api:1.0`` pour permettre un envoi de l'image sur DockerHub.
 
-Pour afficher les logs du conteneur, il suffit de taper la commande `docker logs`, suivi du nom ou de l'ID du conteneur.
+Pour taguer l'image, il suffit d'exécuter la commande `docker tag`
 
 ![](./assets/cli.png)
 
-- `-f` :  Définit si nous souhaitons consulter activement les logs, si ce flag n'est pas présent, les logs s'affichent et vous reprenez la main sur le shell.
+- `nest-api:1.0` : Représente l'image à taguer.
+- `.../nest-api:1.0` : Représente le nom de l'image avec son tag pour l'envoi sur DockerHub (remplacez `...` par votre nom d'utilisateur DockerHub)
