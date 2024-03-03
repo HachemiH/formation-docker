@@ -1,5 +1,7 @@
-# 5. Pour vérifier que l'image a bien été créée.
+# 6. Démarrer l'image nest-api:1.0 dans un conteneur.
 
-Pour vérifier que l'image a bien été créée, il suffit de taper la commande `docker image ls`.
+Pour démarrer un conteneur de l'API, il suffit d'exécuter la commande `docker run`.
 
 ![](./assets/cli.png)
+
+- `-p 3000:3000` : Définit qu'une redirection du port `3000` de l'hôte est effectué vers le port `3000` du conteneur. 
