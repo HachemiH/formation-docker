@@ -1,7 +1,5 @@
-# 4. Vérifier l'état des conteneurs.
+# 5. Éteindre les conteneurs efficacement.
 
-Pour vérifier l'état du conteneur, il suffit de taper la commande `docker ps`.
+Pour vérifier l'état du conteneur, il suffit de taper la commande `docker compose down`.
 
 ![](./assets/cli.png)
-
-Ici on voit que les 2 conteneurs sont bien démarré.
