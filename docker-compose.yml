@@ -1,0 +1,30 @@
+version: '3'
+services:
+  db:
+    image: postgres:12.2
+    container_name: my-database
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: deom
+      POSTGRES_PASSWORD: test
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - back-network
+
+  nginx:
+    image: nginx:latest
+    container_name: my-nginx
+    ports:
+      - "80:80"
+    networks:
+      - back-network
+
+volumes:
+  pgdata:
+    name: pgdata
+networks:
+  back-network:
+    name: back-network
+    driver: bridge
