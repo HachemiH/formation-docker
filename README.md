@@ -1,9 +1,7 @@
-# 3. Exécuter le fichier ``docker-compose``.
+# 4. Vérifier l'état des conteneurs.
 
-Pour exécuter le fichier `docker-compose.yml`, il suffit de taper la commande `docker compose up`.
+Pour vérifier l'état du conteneur, il suffit de taper la commande `docker ps`.
 
 ![](./assets/cli.png)
 
-- `docker compose` : La commande de base.
-- `up`: Monte les conteneurs.
-
+Ici on voit que les 2 conteneurs sont bien démarré.
