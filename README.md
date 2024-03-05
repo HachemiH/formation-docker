@@ -8,7 +8,7 @@ Ensuite, vous deviez taper la commande suivante dans le shell :
 
 ![Shell](./assets/shell.png)
 
-Détaillons la commande `docker run -d -p 80:80 nginx` :
+Détaillons la commande `docker run -d -p 8080:80 nginx` :
 
 1. `docker run` : Permet de dire à Docker de lancer un conteneur.
 2. `-d` : Cette option permet de détacher le processus d'exécution du conteneur de celui du shell.
