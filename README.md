@@ -4,9 +4,12 @@ Voici le `.dockerignore` associé à l'application :
 
 ```dockerignore
 dist/
-node_modules/
+nodes_modules/
 .eslintrc.js
 .prettierrc
+test/
+Dockerfile
+.dockerignore
 ```
 
 - `dist/` : Exclue les fichiers transpilés de l'application
