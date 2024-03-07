@@ -1,4 +1,4 @@
-# 4. Vérifier que le volume `pgdata` est bien utilisé par le conteneur.
+# 4. Vérifier que le volume `pgdata` est bien utilisé par le conteneur. (Volume)
 
 Pour vérifier que le conteneur utilise bien le volume `pgdata`, il suffit d'éxecuter la commande `docker inspect` suivi du nom ou de l'ID du conteneur :
 
