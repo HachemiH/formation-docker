@@ -1,8 +1,8 @@
-# Introduction
+# Bienvenue dans notre communauté de contributeurs !
 
-Merci de l'intérêt que vous portez au projet.
+Bienvenue et merci de votre intérêt pour le projet !
 
-Vous trouverez dans ce document une ligne de conduite à adopter afin d'effectuer des contributions à ce dépôt conformes.
+Ce guide a été créé pour vous aider à comprendre comment vous pouvez contribuer de manière significative. Votre participation est précieuse pour nous, et nous sommes impatients de collaborer avec vous !
 
 # Guide de contribution
 
