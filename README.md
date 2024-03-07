@@ -1,4 +1,4 @@
-# 3. Démarrer un conteneur nommé `my-database` de l'image `postgres`.
+# 3. Démarrer un conteneur nommé `my-database` de l'image `postgres`. (Volume)
 
 Pour démarrer un conteneur `postgres` il suffit d'exécuter la commande `docker run`.
 
