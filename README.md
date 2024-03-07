@@ -1,4 +1,4 @@
-# 8. Vérifier que le dossier `/app/data` contient le fichier `test.md` via l'onglet du conteneur dans Docker Desktop.
+# 8. Vérifier que le dossier `/app/data` contient le fichier `test.md` via l'onglet du conteneur dans Docker Desktop. (Bind Mount)
 
 En effet, on peut constater que le fichier `test.md` est aussi affiché dans la liste des fichiers du conteneur `my-nginx`.
 Nous venous de créer un bind-mount, comme on peut le constater.
