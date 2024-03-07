@@ -1,4 +1,4 @@
-# 4. Vérifier que le volume `pgdata` est bien utilisé par le conteneur via les onglets du conteneur.
+# 4. Vérifier que le volume `pgdata` est bien utilisé par le conteneur via les onglets du conteneur. (Volume)
 
 Pour vérifier que le volume est utilisé via le conteneur, il suffit :
 
