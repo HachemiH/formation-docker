@@ -1,6 +1,10 @@
-# Guide de contribution
+# Introduction
 
-Afin de contribuer à ce repository, voici une liste d'exigences à respecter afin que vos contributions soient examinées et prise en compte :
+Merci de l'intérêt que vous portez au projet.
+
+Vous trouverez dans ce document une ligne de conduite à adopter afin d'effectuer des contributions à ce repository conformes.
+
+# Guide de contribution
 
 - Vous devez forker le repository ([Tout savoir sur le Fork](https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo))
 
