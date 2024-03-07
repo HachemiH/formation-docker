@@ -8,3 +8,4 @@ Afin de contribuer à ce repository, voici une liste d'exigences à respecter af
 
 - Le titre de votre Pull Request se doit d'être clair et concis (Exemple : Fix typo in Module 3. Si vous avez corrigé des fautes d'orthographe)
 - Une description rapide des modifications apportées par votre PR peut-être une bonne chose pour donner un aperçu des modifications. (Optionnel)
+- Les modifications apportées au sein d'une seule et même PR ne doivent pas affecter plus de 5 fichiers, dans le cas où votre PR toucherait plus de 5 fichiers, il pourrait être nécessaire d'éclater vos modifications sur plusieurs PR.
