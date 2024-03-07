@@ -1,4 +1,4 @@
-# 11. Supprimer le volume `pgdata`.
+# 11. Supprimer le volume `pgdata`. (Volume)
 
 Pour supprimer le volume, il suffit de se rendre dans l'onglet des Volumes et de cliquer sur la corbeille du volume.
 
