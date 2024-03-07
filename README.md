@@ -1,4 +1,4 @@
-# 6. Démarrer un conteneur nommé `my-nginx` de l'image `nginx`
+# 6. Démarrer un conteneur nommé `my-nginx` de l'image `nginx` (Bind Mount)
 
 Pour démarrer un conteneur nommé `my-nginx` de l'image `nginx`, il suffit d'exécuter la commande `docker run` :
 
