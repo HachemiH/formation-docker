@@ -1,4 +1,4 @@
-# 1. Créer un volume nommé `pgdata`
+# 1. Créer un volume nommé `pgdata` (Volume)
 
 Pour créer un volume Docker, il suffit de se rendre dans l'onglet `Volumes` de Docker Desktop.
 
