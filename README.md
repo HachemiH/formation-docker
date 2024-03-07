@@ -1,4 +1,4 @@
-# 2. Démarrer un conteneur nommé `my-database` de l'image `postgres`
+# 2. Démarrer un conteneur nommé `my-database` de l'image `postgres` (Volume)
 
 Pour créer un conteneur de l'image `postgres`, il suffit de paramètrer le conteneur avant de le lancer en cliquant sur `Optional Settings`.
 
